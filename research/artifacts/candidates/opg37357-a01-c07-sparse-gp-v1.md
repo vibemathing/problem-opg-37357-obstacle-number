@@ -96,7 +96,7 @@ All graph points are exterior, every vertical-ray guard holds, the polygon is si
 
 B. Bit variables cannot be perturbed along with coordinates. At a c=0 solution of c(c-1)=0, arbitrarily small nonzero c values fail the Boolean equation. The proof fixes all bits before taking a neighborhood.
 
-C. Removing the adjacent guard would admit backtracking possibilities once combined GP is deleted. Its explicit restoration is not optional. Likewise, replacing closed avoidance by proper-only avoidance for edges would reintroduce c01's tangency fake witnesses.
+C. The adjacent guard is retained as an explicit, possibly redundant simplicity condition; no irredundancy claim is made. For m>=4, adjacent overlap puts the shorter side's nonshared endpoint on the longer side. Its other incident side is nonadjacent to that longer side, violating closed nonintersection. For m=3, the nonzero-area guard excludes collinearity. Retaining the guard makes the open-condition argument direct. In contrast, replacing closed avoidance by proper-only avoidance for graph edges would reintroduce c01's tangency fake witnesses.
 
 D. The ray direction factor cannot be omitted. c06 already gives false interior witnesses in GP-ALL if full-line crossings or the wrong denominator sign are used. A density argument cannot repair an incorrect ray predicate.
 
