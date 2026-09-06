@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-37357-obstacle-number",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762707,
+    "node_id": "R_kgDOUP0S0w",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-37357-obstacle-number",
+  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+  "harness_snapshot_sha256": "1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
+  "base_revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg37357-a01",
+  "route_id": "route:one-obstacle-semialgebraic-encoding-v1",
+  "graph_id": "graph:opg37357-initial-v1",
+  "obligation_id": "obligation:opg37357-bounded-polygon-encoding",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg37357-a01-c04-normal-form-v1",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3",
+    "pull_request_number": 7,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/7"
+  },
+  "objective": "Reduce the bounded GP-ALL polygon question to one exact-m affine-normalized formula and prove rational-witness existence without a polynomial bit-size claim.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37357-a01-c04-normal-form-v1",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg37357-a01-c04-normal-form-v1.md",
+      "sha256": "5fc93064a9e6ded6305c0c6db7f19ae59a18674bce353aebd149b283a06d7d60"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg37357-c04-exact-size",
+      "text": "For m>=3, a GP-ALL one-polygon representation with at most m corners exists exactly when one with exactly m distinct nonstraight corners exists.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c04-affine-normalization",
+      "text": "For n>=2 one may simultaneously set p_1=(0,0), p_2=(1,0), and the generic ray d=(0,1) after an invertible affine change of coordinates.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c04-rational-witness",
+      "text": "The normalized GP-ALL formula, when satisfiable, has a rational coordinate assignment with real parity bits equal to 0 or 1; no polynomial bit bound follows.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "The c01 closed filled simple-polygon model and its GP-ALL encoding.",
+    "For transfer to GP-V only, the c02 same-budget regularization candidate.",
+    "Euclidean polygon geometry, invertible affine maps, finite strict-sign continuity, and density of rational coordinates."
+  ],
+  "risks": [
+    "No mathematical verifier, compiler, or solver execution.",
+    "Exact-size padding, affine invariance, and the c01 faithful encoding remain formal-replay obligations.",
+    "Rationality is not a coordinate-bit complexity bound or an NP-membership result.",
+    "Proper-only simplifications are valid only with the combined general-position guards retained."
+  ],
+  "open_obligations": [
+    "obligation:opg37357-bounded-polygon-encoding",
+    "obligation:opg37357-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/failed-routes.jsonl",
+      "revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/artifacts/candidates/opg37357-a01-c01-closed-contact-v1.md",
+      "revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/artifacts/candidates/opg37357-a01-c02-regularization-v1.md",
+      "revision": "bcfec30feef427d950c3721fdad490647e318c2f",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:11:51Z"
+}
