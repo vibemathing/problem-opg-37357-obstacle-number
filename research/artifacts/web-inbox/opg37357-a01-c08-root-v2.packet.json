@@ -1,45 +1,45 @@
 {
-  "schema_version": "1.1.0",
-  "channel": "chatgpt-web-github-issue-pr-writer",
-  "repository": "vibemathing/problem-opg-37357-obstacle-number",
-  "repository_identity": {"binding_state":"verified","database_id":1358762707,"node_id":"R_kgDOUP0S0w","default_branch":"main"},
-  "problem_id": "problem:opg-37357-obstacle-number",
-  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
-  "harness_snapshot_sha256": "1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
-  "base_revision": "853be12e7783f3b4843e98416a9cbbd29f2d41bf",
-  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
-  "attempt_id": "attempt:web-20260906-opg37357-a01",
-  "route_id": "route:one-obstacle-semialgebraic-encoding-v1",
-  "graph_id": "graph:opg37357-initial-v1",
-  "obligation_id": "obligation:opg37357-root",
-  "generator": {"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
-  "transport": {"branch":"web/attempt-opg37357-a01-c08-root-x4-certificate-v1","issue_number":3,"issue_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3","pull_request_number":null,"pull_request_url":null},
-  "objective": "Answer Q1 with the explicit planar graph X4, an all-placement geometric necessary-condition proof, and a locally replayed exact RUP certificate; retain Q2 and all trusted-admission tasks as open.",
-  "candidate_artifacts": [
-    {"candidate_id":"candidate:opg37357-a01-c08-x4-root-proof-v2","kind":"proof","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/README.md","sha256":"a6a4ecc039d40287750eb15fd1d12d6e178197c8c3b6ec9fe5dcca34344d04f0"},
-    {"candidate_id":"candidate:opg37357-a01-c08-necessary-cnf-v2","kind":"formalization","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/necessary_cnf.py","sha256":"49a83611574808cb7296c761128821a9a2bd32fcab97de9dc0a0d610aa69f83a"},
-    {"candidate_id":"candidate:opg37357-a01-c08-exact-replay-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/replay.py","sha256":"58d1dc95f4619a1cbe9545ded2ce275c70133fc962469f015618132433dae1e4"},
-    {"candidate_id":"candidate:opg37357-a01-c08-transport-decoder-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/materialize.py","sha256":"fcfa80020fbb562524c9b3300ef0dc92d3ff0b4ac50dbec86249f1546359dd37"},
-    {"candidate_id":"candidate:opg37357-a01-c08-rup-certificate-v2","kind":"counterexample","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/certificate.json","sha256":"b4668771fd98f902ebc6c8fc73e7db2a6a5c103660ccfed6e20c442f73505dc5"},
-    {"candidate_id":"candidate:opg37357-a01-c08-replay-observation-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/replay-observation.json","sha256":"0ee95aab0b10d51ada5f766a6cb345cf780611ebeafd3fc1fed23849dff2636d"}
-  ],
-  "atomic_claims": [
-    {"claim_id":"claim:opg37357-c08-x4-planar","text":"The explicit rational straight-line drawing certifies the displayed ten-vertex, 24-edge X4 graph planar.","status":"candidate"},
-    {"claim_id":"claim:opg37357-c08-all-placement-necessity","text":"Every one-connected-obstacle representation of X4, with unrestricted placements, implies satisfiability of the regenerated 540-variable, 69332-clause CNF.","status":"candidate"},
-    {"claim_id":"claim:opg37357-c08-rup-contradiction","text":"The stored 1827-addition RUP certificate derives the empty clause; a standard-library exact checker replayed it against the full generated CNF.","status":"candidate"},
-    {"claim_id":"claim:opg37357-c08-q1-witness","text":"Combining geometric necessity, the RUP contradiction and planarity yields a positive Q1 proof candidate using X4; no Q2 answer or trusted Result is claimed.","status":"candidate"}
-  ],
-  "assumptions": ["Ordinary obstacle number counts connected obstacles; arbitrary disconnected unions are not one obstacle.","Visibility uses closed straight segments, with no prohibition on graph-edge crossings.","Polygonal Jordan separation, finite positive-clearance perturbations, real determinant identities and Boolean unit-propagation soundness."],
-  "risks": ["Both generator and exact checker ran within the candidate-generation trust domain; no trusted verifier receipt exists.","Kernel translation, axiom audit and source-to-contract faithfulness remain unadmitted.","Planarity coordinates are not restrictions on the lower-bound placements.","The certificate uses a fully hash-bound one-character transport delta; replay-v2 is self-contained and does not consume the preserved earlier partial producer/proof files.","Q2 is not answered, graph order minimality is not claimed, and SAT at path caps 2 or 3 is inconclusive."],
-  "open_obligations": ["obligation:opg37357-root","obligation:opg37357-bounded-polygon-encoding"],
-  "failed_route_proposal": null,
-  "source_refs": [
-    {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"problem-library/records/canonical-problems.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
-    {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/records/obligation-graphs.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
-    {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/records/failed-routes.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
-    {"repository":"JGAA","path":"https://jgaa.info/index.php/jgaa/article/download/paper452/2511/2318","revision":"21(6), 1107-1119 (2017), DOI 10.7155/jgaa.00452; journal Proposition 3","relation":"prior_art"}
-  ],
-  "requested_verification": ["kernel_check","axiom_escape_audit","statement_faithfulness"],
-  "verdict": "candidate_only",
-  "created_at": "2026-09-06T13:39:30+00:00"
+"schema_version":"1.1.0",
+"channel":"chatgpt-web-github-issue-pr-writer",
+"repository":"vibemathing/problem-opg-37357-obstacle-number",
+"repository_identity":{"binding_state":"verified","database_id":1358762707,"node_id":"R_kgDOUP0S0w","default_branch":"main"},
+"problem_id":"problem:opg-37357-obstacle-number",
+"problem_contract_sha256":"10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+"harness_snapshot_sha256":"1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
+"base_revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf",
+"importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+"attempt_id":"attempt:web-20260906-opg37357-a01",
+"route_id":"route:one-obstacle-semialgebraic-encoding-v1",
+"graph_id":"graph:opg37357-initial-v1",
+"obligation_id":"obligation:opg37357-root",
+"generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+"transport":{"branch":"web/attempt-opg37357-a01-c08-root-x4-certificate-v1","issue_number":3,"issue_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3","pull_request_number":11,"pull_request_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/11"},
+"objective":"Answer Q1 with the explicit planar graph X4, an all-placement geometric necessary-condition proof, and a locally replayed exact RUP certificate; retain Q2 and all trusted-admission tasks as open.",
+"candidate_artifacts":[
+{"candidate_id":"candidate:opg37357-a01-c08-x4-root-proof-v2","kind":"proof","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/README.md","sha256":"a6a4ecc039d40287750eb15fd1d12d6e178197c8c3b6ec9fe5dcca34344d04f0"},
+{"candidate_id":"candidate:opg37357-a01-c08-necessary-cnf-v2","kind":"formalization","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/necessary_cnf.py","sha256":"49a83611574808cb7296c761128821a9a2bd32fcab97de9dc0a0d610aa69f83a"},
+{"candidate_id":"candidate:opg37357-a01-c08-exact-replay-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/replay.py","sha256":"58d1dc95f4619a1cbe9545ded2ce275c70133fc962469f015618132433dae1e4"},
+{"candidate_id":"candidate:opg37357-a01-c08-transport-decoder-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/materialize.py","sha256":"fcfa80020fbb562524c9b3300ef0dc92d3ff0b4ac50dbec86249f1546359dd37"},
+{"candidate_id":"candidate:opg37357-a01-c08-rup-certificate-v2","kind":"counterexample","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/certificate.json","sha256":"b4668771fd98f902ebc6c8fc73e7db2a6a5c103660ccfed6e20c442f73505dc5"},
+{"candidate_id":"candidate:opg37357-a01-c08-replay-observation-v2","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-c08-root-x4/replay-v2/replay-observation.json","sha256":"0ee95aab0b10d51ada5f766a6cb345cf780611ebeafd3fc1fed23849dff2636d"}
+],
+"atomic_claims":[
+{"claim_id":"claim:opg37357-c08-x4-planar","text":"The explicit rational straight-line drawing certifies the displayed ten-vertex, 24-edge X4 graph planar.","status":"candidate"},
+{"claim_id":"claim:opg37357-c08-all-placement-necessity","text":"Every one-connected-obstacle representation of X4, with unrestricted placements, implies satisfiability of the regenerated 540-variable, 69332-clause CNF.","status":"candidate"},
+{"claim_id":"claim:opg37357-c08-rup-contradiction","text":"The stored 1827-addition RUP certificate derives the empty clause; a standard-library exact checker replayed it against the full generated CNF.","status":"candidate"},
+{"claim_id":"claim:opg37357-c08-q1-witness","text":"Combining geometric necessity, the RUP contradiction and planarity yields a positive Q1 proof candidate using X4; no Q2 answer or trusted Result is claimed.","status":"candidate"}
+],
+"assumptions":["Ordinary obstacle number counts connected obstacles; arbitrary disconnected unions are not one obstacle.","Visibility uses closed straight segments, with no prohibition on graph-edge crossings.","Polygonal Jordan separation, finite positive-clearance perturbations, real determinant identities and Boolean unit-propagation soundness."],
+"risks":["Both generator and exact checker ran within the candidate-generation trust domain; no trusted verifier receipt exists.","Kernel translation, axiom audit and source-to-contract faithfulness remain unadmitted.","Planarity coordinates are not restrictions on the lower-bound placements.","The certificate uses a fully hash-bound one-character transport delta; replay-v2 is self-contained and does not consume the preserved earlier partial producer/proof files.","Q2 is not answered, graph order minimality is not claimed, and SAT at path caps 2 or 3 is inconclusive."],
+"open_obligations":["obligation:opg37357-root","obligation:opg37357-bounded-polygon-encoding"],
+"failed_route_proposal":null,
+"source_refs":[
+{"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"problem-library/records/canonical-problems.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
+{"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/records/obligation-graphs.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
+{"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/records/failed-routes.jsonl","revision":"853be12e7783f3b4843e98416a9cbbd29f2d41bf","relation":"exact"},
+{"repository":"JGAA","path":"https://jgaa.info/index.php/jgaa/article/download/paper452/2511/2318","revision":"21(6), 1107-1119 (2017), DOI 10.7155/jgaa.00452; journal Proposition 3","relation":"prior_art"}
+],
+"requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],
+"verdict":"candidate_only",
+"created_at":"2026-09-06T13:39:30+00:00"
 }
