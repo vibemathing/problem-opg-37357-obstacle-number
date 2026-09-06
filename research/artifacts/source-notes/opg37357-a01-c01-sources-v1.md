@@ -13,7 +13,7 @@ The introduction uses closed connected polygonal obstacles, excludes graph point
 
 ## S2. Existing result relevant to the first root question
 
-Leah Wrenn Berman, Glenn G. Chappell, Jill R. Faudree, John Gimbel, Chris Hartman, Gordon I. Williams, *Graphs with Obstacle Number Greater than One*, JGAA 21(5), 757--780 (2017), DOI 10.7155/jgaa.00452. Preprint arXiv:1606.03782; Proposition 5.3(2).
+Leah Wrenn Berman, Glenn G. Chappell, Jill R. Faudree, John Gimbel, Chris Hartman, Gordon I. Williams, *Graphs with Obstacle Number Greater than One*, JGAA 21(6), 1107--1119 (2017), DOI 10.7155/jgaa.00452. Preprint arXiv:1606.03782v2 (6 April 2017); Proposition 5.3(2) refers to this preprint version. Journal metadata was checked at the publisher and corrected before merge.
 Locators: https://jgaa.info/index.php/jgaa/article/view/paper452 ; https://arxiv.org/pdf/1606.03782
 
 The article reports ordinary obstacle number 2 for the icosahedron graph. Proposition 3.5 alone concerns OUTSIDE obstacle number and must not be substituted for Proposition 5.3. The source's connected-obstacle convention is broader than this candidate's bounded simple-polygon model. No supplied SAT certificate has been replayed here. This is a prior-art and statement-faithfulness flag for the first root question, not repository admission or a newly discovered planar obstruction. It supplies no universal constant for the separate second question.
