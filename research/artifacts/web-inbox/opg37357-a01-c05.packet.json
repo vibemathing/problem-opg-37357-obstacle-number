@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg37357-a01-c05-formula-export-v1",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 8,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/8"
   },
   "objective": "Implement a bounded deterministic SMT-LIB exporter for the c04 exact-m affine-normalized GP-ALL sentence, with distinct invalid-input, resource-refusal and mathematical-false paths.",
   "candidate_artifacts": [
