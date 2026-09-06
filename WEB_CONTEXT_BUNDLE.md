@@ -208,72 +208,102 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "Open Problem Garden OPG-37357"
+    ],
     "allowed_axioms": [
-      "none"
+      "finite-graph-basic",
+      "euclidean-geometry",
+      "real-ordered-field"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "All graphs and digraphs are finite and simple unless the statement explicitly says otherwise."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "planar-graph-enumerator-v1",
+        "exact-geometry-smt-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 65536,
-        "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-09-06T03:30:00Z",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "A placement of vertices as points in R² together with polygonal obstacles P1,…,Pk such that two vertices are adjacent exactly when their connecting line segment intersects no obstacle.",
+        "term": "k-obstacle drawing"
+      },
+      {
+        "definition": "The minimum k for which a graph has a k-obstacle drawing.",
+        "term": "obstacle number"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "Finite simple planar graphs and straight-line visibility drawings with finitely many polygonal obstacles.",
       "objects": [
-        "template-placeholder"
+        "planar graph",
+        "obstacle drawing",
+        "obstacle number"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "05C62"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:opg-37357-obstacle-number",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
-        "kind": "find",
+        "domain": "finite simple planar graphs with obstacle number greater than 1",
+        "kind": "exists",
         "variables": [
-          "replacement_problem"
+          "G"
+        ]
+      },
+      {
+        "domain": "positive integers proposed as a universal upper bound",
+        "kind": "exists",
+        "variables": [
+          "k"
+        ]
+      },
+      {
+        "domain": "finite simple planar graphs",
+        "kind": "forall",
+        "variables": [
+          "H"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-09-02T00:06:43Z",
+        "source": "UnsolvedMath",
+        "source_record_id": "unsolvedmath-opg-37357-5752fdb531dd",
+        "url": "https://www.unsolvedmath.com/problems/OPG-37357"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "text": "Does there exist a finite planar graph with obstacle number greater than 1? Separately, does there exist a universal integer k such that every finite planar graph has obstacle number at most k?",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Obstacle number of planar graphs",
+    "updated_at": "2026-09-06T03:30:00Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5"
 }
 ```
