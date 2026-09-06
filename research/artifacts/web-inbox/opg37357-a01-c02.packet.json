@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg37357-a01-c02-regularization-v1",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 5,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/5"
   },
   "objective": "Audit a same-corner-budget GP-V to GP-ALL conversion, and use it to formulate a source-dependent connected-graph cutoff while retaining every hypothesis.",
   "candidate_artifacts": [
