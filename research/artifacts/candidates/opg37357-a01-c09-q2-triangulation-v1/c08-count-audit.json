@@ -1,0 +1,44 @@
+{
+  "verdict": "candidate_only",
+  "python": "3.13.5",
+  "source_sha256": "49a83611574808cb7296c761128821a9a2bd32fcab97de9dc0a0d610aa69f83a",
+  "operation": "deterministic CNF regeneration; no solver or proof-checker called",
+  "cases": [
+    {
+      "path_edge_cap": 2,
+      "variables": 540,
+      "clauses": 24100,
+      "blocks": {
+        "four": 420,
+        "five": 20160,
+        "key": 3520
+      },
+      "paths": 44,
+      "cnf_sha256": "9770bd96b84c51e9e2cbd18387d8ac2196c922b5980f9dbe2af1fd6d4bdb16be"
+    },
+    {
+      "path_edge_cap": 3,
+      "variables": 540,
+      "clauses": 37572,
+      "blocks": {
+        "four": 420,
+        "five": 20160,
+        "key": 16992
+      },
+      "paths": 244,
+      "cnf_sha256": "94110fd9736d8efc674463de410eeb688f50b36c1f9be4a0b011f6ac0da76c45"
+    },
+    {
+      "path_edge_cap": 4,
+      "variables": 540,
+      "clauses": 69332,
+      "blocks": {
+        "four": 420,
+        "five": 20160,
+        "key": 48752
+      },
+      "paths": 804,
+      "cnf_sha256": "de54d35f78d3c7d84e24651e5ce6f82c9ebe6d78bc7bd2deb66aa591e6ea276c"
+    }
+  ]
+}

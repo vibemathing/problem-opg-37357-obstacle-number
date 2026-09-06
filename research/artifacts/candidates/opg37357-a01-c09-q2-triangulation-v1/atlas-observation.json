@@ -1,0 +1,35 @@
+{
+  "verdict": "candidate_only",
+  "scope": "induced triangulation regression; no obstacle SAT/UNSAT",
+  "python": "3.13.5",
+  "networkx": "3.6.1",
+  "max_input_order": 7,
+  "planar_graphs_checked": 1012,
+  "counts_by_order": {
+    "3": 4,
+    "4": 11,
+    "5": 33,
+    "6": 142,
+    "7": 822
+  },
+  "triangle_free_inputs": 163,
+  "largest_output_order": 32,
+  "row_sha256": "524be9adf74eed7d5e7c2d2e367416b952017ebe33bbfbbfa1127a4c1b85ae4c",
+  "connectivity_regressions": [
+    {
+      "input": "P3",
+      "H_n": 6,
+      "connectivity": 4
+    },
+    {
+      "input": "C5",
+      "H_n": 15,
+      "connectivity": 4
+    },
+    {
+      "input": "K23",
+      "H_n": 14,
+      "connectivity": 4
+    }
+  ]
+}
