@@ -6,6 +6,7 @@ from __future__ import annotations
 import base64, bz2, collections, hashlib, itertools, json, pathlib, sys, time
 from fractions import Fraction
 from necessary_cnf import dimacs, make_graph
+from materialize import read_certificate
 
 class Rejected(ValueError): pass
 
@@ -105,7 +106,7 @@ def self_test():
     return {'truth_table_cases':trials,'negative_cases':4}
 
 def main():
-    base=pathlib.Path(__file__).resolve().parent;raw=(base/'certificate.json').read_bytes();require(len(raw)<40000,'package cap');d=json.loads(raw)
+    base=pathlib.Path(__file__).resolve().parent;raw=read_certificate(base/'certificate.json');require(len(raw)<40000,'package cap');d=json.loads(raw)
     require(d['format']=='opg37357-x4-rup-package-v2' and d['r']==4 and d['max_path_edges']==4,'package scope')
     plane=check_plane(d['graph']);data,info=dimacs(4,4);require(digest(data)==d['cnf_sha256'],'generated CNF digest');require(info['variables']==d['variables'] and len(info['clauses'])==d['clauses'],'CNF dimensions')
     encoded=''.join(d['proof_base64']);require(len(encoded)<30000,'encoded cap');packed=base64.b64decode(encoded,validate=True)
