@@ -10,14 +10,27 @@ def digest(b): return hashlib.sha256(b).hexdigest()
 
 def load_data(path):
     raw=path.read_bytes()
-    if len(raw)>262144:raise ValueError('container byte cap')
-    lines=raw.decode('ascii').splitlines()
-    if len(lines)!=2 or lines[0]!='OPG37357-C10-ZLIB-BASE64-V1':raise ValueError('container header')
-    compressed=base64.b64decode(lines[1],validate=True)
+    if len(raw)>262144:raise ValueError('manifest byte cap')
+    manifest=json.loads(raw)
+    if manifest['format']!='opg37357-c10-chunks-v2' or len(manifest['parts'])!=10:
+        raise ValueError('manifest format/count')
+    payload=[]
+    for i,part in enumerate(manifest['parts']):
+        name=f'samples-{i:02d}.txt'
+        if part['name']!=name:raise ValueError('chunk name')
+        data=path.with_name(name).read_bytes()
+        if len(data)>600 or len(data)!=part['bytes'] or digest(data)!=part['sha256']:
+            raise ValueError('chunk bytes/digest')
+        payload.append(data)
+    encoded=b''.join(payload)
+    if digest(encoded)!=manifest['payload_sha256']:raise ValueError('payload digest')
+    compressed=base64.b64decode(encoded,validate=True)
     dec=zlib.decompressobj();body=dec.decompress(compressed,1048577)
-    if len(body)>1048576 or dec.unconsumed_tail or dec.unused_data or not dec.eof:raise ValueError('compressed frame/budget')
+    if len(body)>1048576 or dec.unconsumed_tail or dec.unused_data or not dec.eof:
+        raise ValueError('compressed frame/budget')
     obj=json.loads(body)
-    if obj['format']!='opg37357-c10-selected-models-v1' or len(obj['cases'])>16:raise ValueError('data schema/range')
+    if obj['format']!='opg37357-c10-selected-models-v1' or len(obj['cases'])>16:
+        raise ValueError('data schema/range')
     return obj,digest(raw)
 
 
