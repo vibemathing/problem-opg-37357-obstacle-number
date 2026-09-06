@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-37357-obstacle-number",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762707,
+    "node_id": "R_kgDOUP0S0w",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-37357-obstacle-number",
+  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+  "harness_snapshot_sha256": "1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
+  "base_revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg37357-a01",
+  "route_id": "route:one-obstacle-semialgebraic-encoding-v1",
+  "graph_id": "graph:opg37357-initial-v1",
+  "obligation_id": "obligation:opg37357-bounded-polygon-encoding",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg37357-a01-c05-formula-export-v1",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3",
+    "pull_request_number": 8,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/8"
+  },
+  "objective": "Implement a bounded deterministic SMT-LIB exporter for the c04 exact-m affine-normalized GP-ALL sentence, with distinct invalid-input, resource-refusal and mathematical-false paths.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37357-a01-c05-exporter-v1",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg37357_a01_c05_exporter_v1.py",
+      "sha256": "46f7dd6e2ca9cdf2148efd763fae6cad6ebab33e79aecf0ee4510b93df827403"
+    },
+    {
+      "candidate_id": "candidate:opg37357-a01-c05-tests-v1",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg37357_a01_c05_test_exporter_v1.py",
+      "sha256": "5eb41f5dd57127fc465df99f11dd11a532b8011bf00b46390e5761c84cc44ab6"
+    },
+    {
+      "candidate_id": "candidate:opg37357-a01-c05-export-contract-v1",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg37357-a01-c05-export-contract-v1.md",
+      "sha256": "054f7091491a05e28500815c396a1c7ddee6c70790b20a4946dc733fa96843be"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg37357-c05-returned-script",
+      "text": "Every completed export represents the c04 bounded GP-ALL question, conditional on the c01/c04 candidate lemmas and translation replay.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c05-count-invariant",
+      "text": "For n>=1,m>=3 the emitted constraint blocks have the explicit combinatorial assertion and declaration counts in the export contract.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c05-error-separation",
+      "text": "Configured export refusals and validation failures produce no SMT formula and are not mathematical UNSAT answers.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple labeled input graph; planarity is a promise only.",
+    "The c01 filled closed simple polygon and c04 exact-size GP-ALL affine normal form.",
+    "Nonrecursive SMT-LIB definitions are expanded over the real ordered field."
+  ],
+  "risks": [
+    "Only Python AST parsing and byte hashing were performed; exporter, regressions and solvers were not executed.",
+    "Counts and balanced parentheses do not verify SMT typing or geometric faithfulness.",
+    "Engineering caps are not mathematical cutoffs; refusal at a larger m does not exclude a representation.",
+    "Kernel, geometric and statement-faithfulness replay remain open."
+  ],
+  "open_obligations": [
+    "obligation:opg37357-bounded-polygon-encoding",
+    "obligation:opg37357-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/failed-routes.jsonl",
+      "revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/artifacts/candidates/opg37357-a01-c01-closed-contact-v1.md",
+      "revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/artifacts/candidates/opg37357-a01-c04-normal-form-v1.md",
+      "revision": "79cdfcaad9ab63d9ea7d84a3b1d1d8341fd0e571",
+      "relation": "exact"
+    },
+    {
+      "repository": "SMT-LIB",
+      "path": "logics-all.shtml#QF_NRA",
+      "revision": "2.7 declaration; retrieved 2026-09-06",
+      "relation": "exact"
+    },
+    {
+      "repository": "SMT-LIB",
+      "path": "theories-Reals.shtml",
+      "revision": "retrieved 2026-09-06",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:39:04Z"
+}
