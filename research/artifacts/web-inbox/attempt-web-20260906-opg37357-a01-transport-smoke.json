@@ -1,0 +1,66 @@
+{
+  "assumptions": [],
+  "atomic_claims": [],
+  "attempt_id": "attempt:web-20260906-opg37357-a01",
+  "base_revision": "6fa56fee140901d2388efae85c57b9c241c0b8d6",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg-37357-obstacle-number-transport-smoke-v1",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/candidate-opg-37357-obstacle-number-transport-smoke.md",
+      "sha256": "b48dd5024016f1fa896c5e901bdf02ecb30d282546a1cdb87790be975d0300d3"
+    }
+  ],
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "created_at": "2026-09-06T05:25:00Z",
+  "failed_route_proposal": null,
+  "generator": {
+    "model_fingerprint_status": "unverified",
+    "model_label": "non-mathematical-transport-smoke",
+    "principal": "trusted-transport-smoke"
+  },
+  "graph_id": "graph:opg37357-initial-v1",
+  "harness_snapshot_sha256": "0d4d8b51b0ef9eca3ad10062eaead4dcbee97d360df93abc7acbe7e0ad1c07f7",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "objective": "Exercise the candidate-only transport without making a mathematical claim.",
+  "obligation_id": "obligation:opg37357-bounded-polygon-encoding",
+  "open_obligations": [
+    "obligation:opg37357-bounded-polygon-encoding",
+    "obligation:opg37357-root"
+  ],
+  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+  "problem_id": "problem:opg-37357-obstacle-number",
+  "repository": "vibemathing/problem-opg-37357-obstacle-number",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762707,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP0S0w"
+  },
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "risks": [
+    "This artifact is a transport smoke only and must not be interpreted as mathematical evidence."
+  ],
+  "route_id": "route:one-obstacle-semialgebraic-encoding-v1",
+  "schema_version": "1.1.0",
+  "source_refs": [
+    {
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "relation": "exact",
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "revision": "6fa56fee140901d2388efae85c57b9c241c0b8d6"
+    }
+  ],
+  "transport": {
+    "branch": "web/attempt-web-20260906-opg37357-a01-transport-smoke",
+    "issue_number": 1,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/1",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "verdict": "candidate_only"
+}
