@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-37357-obstacle-number",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762707,
+    "node_id": "R_kgDOUP0S0w",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-37357-obstacle-number",
+  "problem_contract_sha256": "10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+  "harness_snapshot_sha256": "1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
+  "base_revision": "fae37538c3d7b76e3ea977c3c734b455146f357f",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg37357-a01",
+  "route_id": "route:one-obstacle-semialgebraic-encoding-v1",
+  "graph_id": "graph:opg37357-initial-v1",
+  "obligation_id": "obligation:opg37357-bounded-polygon-encoding",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg37357-a01-c01-closed-contact-v1",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3",
+    "pull_request_number": 4,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/4"
+  },
+  "objective": "Construct and audit an existential-real encoding for a fixed labeled planar graph and one filled closed simple polygon with at most m corners, distinguishing combined general position from vertex-only general position.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37357-a01-c01-closed-contact-v1",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg37357-a01-c01-closed-contact-v1.md",
+      "sha256": "20636a040864566fdae24fe5466e7571e3f748d75bf627f7aa88ef525e8b354d"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg37357-c01-primitives",
+      "text": "Closed segment membership/intersection and generic-ray intersection are expressed exactly by the displayed polynomial sign formulas.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c01-exterior",
+      "text": "The simple-polygon constraints and real parity-bit recurrence force all graph points into the unbounded complementary component.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c01-bounded-equivalence",
+      "text": "For each declared general-position convention, Phi(G,m) is equivalent to a representation of that convention with one filled closed simple polygon having at most m corners.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37357-c01-degeneracy-audit",
+      "text": "Cases A1-A7 exhibit failures of specific simplified predicates or witness restrictions; none is a graph-level obstruction to unrestricted obstacle number one.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple labeled graph; planarity is an input promise only.",
+    "Filled closed bounded simple polygon; graph points are exterior; boundary contact blocks.",
+    "Main target GP-ALL and diagnostic extension GP-V are separate formulas.",
+    "Euclidean polygonal separation/parity facts and ordered real-field reasoning."
+  ],
+  "risks": [
+    "No Lean, SMT, or CGAL execution or mathematical verifier receipt.",
+    "Same-corner-budget perturbation and arbitrary connected-obstacle conversion have not been audited.",
+    "No cutoff B(n) is imported in this packet; bounded-m UNSAT is not an unrestricted obstruction.",
+    "First root question has relevant prior art; its source-faithfulness and certificate replay are not admitted evidence."
+  ],
+  "open_obligations": [
+    "obligation:opg37357-bounded-polygon-encoding",
+    "obligation:opg37357-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "fae37538c3d7b76e3ea977c3c734b455146f357f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "fae37538c3d7b76e3ea977c3c734b455146f357f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/records/failed-routes.jsonl",
+      "revision": "fae37538c3d7b76e3ea977c3c734b455146f357f",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37357-obstacle-number",
+      "path": "research/artifacts/source-notes/opg37357-a01-c01-sources-v1.md",
+      "revision": "d302b9973097ef03ec1aca8cd3e11e873728b0d7",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "arXiv",
+      "path": "1706.06992v3",
+      "revision": "2017-09-07",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "JGAA",
+      "path": "10.7155/jgaa.00452",
+      "revision": "2017",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "CGAL documentation",
+      "path": "Polygon/group__PkgPolygon2Functions.html",
+      "revision": "6.0",
+      "relation": "analogy"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:25:52Z"
+}
