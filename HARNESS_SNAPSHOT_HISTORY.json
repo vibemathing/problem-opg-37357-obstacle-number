@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "harness_snapshot_sha256": "1b616175accd4e6432c60d0bd0087350a8d5d18fee8b49e9809a071292109fde",
+      "harness_version": "1.1.2",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "97499c98e0774ef58c0be06ff8f3035c89cda1dffb6f9a9d222fb281b049cdb4",
+      "tree_sha256": "179da8dd9193d3f279b4e0415abff6cb42b606e4411e376e420d474fde88753e"
+    },
+    {
+      "harness_snapshot_sha256": "01138f9ef327f48189bfe5547a146488940a535668acbc800de23502e7d1e9e9",
+      "harness_version": "1.2.3",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
+      "tree_sha256": "e58872845dcb2c748bac31c1204c8de422e5ef516c7859e680e3a3e0788373c7"
+    }
+  ],
+  "repository": "vibemathing/problem-opg-37357-obstacle-number",
+  "repository_identity": {
+    "database_id": 1358762707,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP0S0w",
+    "visibility": "public"
+  },
+  "schema_version": "1.0.0"
+}
