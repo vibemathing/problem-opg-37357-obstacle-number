@@ -154,7 +154,7 @@ def main():
             rejected.append(name)
         else:
             raise ValueError('accepted damaged signature: '+name)
-    # An explicit nonrealizable triangle signature passes this combinatorial decoder.
+    # Probe a nonrealizable triangle signature; record the outcome rather than assume it.
     # For three sorted pair lines (01,02,12), signs Delta = sign(orient^2) = +1.
     triangle = extract([[0, 0], [1, 1], [2, 4]])
     triangle['d'][0] *= -1
