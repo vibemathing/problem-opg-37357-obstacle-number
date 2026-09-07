@@ -1,0 +1,89 @@
+{
+  "command": "PYTHONPATH=C27_DIRECTORY python -B checks.py",
+  "current_main_at_start": "61943c788f95f91874b99b77f06b4b8c898a6db7",
+  "elapsed_seconds": 3.679828,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "bounded_candidate_replay_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "output_file_bytes": 4194304,
+    "wall_seconds": 40,
+    "workers": 1
+  },
+  "output_bytes": 167132,
+  "output_sha256": "c1253fab8831d4926d41b4bcdc62df6b8afcaf530436c340f162a04d8fb5cbd6",
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "source_audit": {
+    "c27/fiber.py": {
+      "bytes": 8821,
+      "forbidden_call_hits": [],
+      "imports": [
+        "bisect",
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35"
+    },
+    "c28/checks.py": {
+      "bytes": 9339,
+      "forbidden_call_hits": [],
+      "imports": [
+        "collections",
+        "copy",
+        "coupling",
+        "exhaustive",
+        "fiber",
+        "fractions",
+        "geometry",
+        "hashlib",
+        "itertools",
+        "json",
+        "second_check",
+        "sys"
+      ],
+      "sha256": "407c291d276e2f1ec7e6ef022d92c42643bea04fd117d321b3a21aa7c22fd2b8"
+    },
+    "c28/coupling.py": {
+      "bytes": 4645,
+      "forbidden_call_hits": [],
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "8f45d8e8605c6347c486bd11ec91d0f30eabf58354522189243e8861bdcb681b"
+    },
+    "c28/exhaustive.py": {
+      "bytes": 3656,
+      "forbidden_call_hits": [],
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "31d2b29b6f75ef6b90d4e313071f8a40e8efb5952881aa3308ccc1257d492eb4"
+    },
+    "c28/geometry.py": {
+      "bytes": 4697,
+      "forbidden_call_hits": [],
+      "imports": [
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "bbab0b90786c7e330982f12377525594877ae2cb0b7aa8f86c77c828709058b8"
+    },
+    "c28/second_check.py": {
+      "bytes": 6756,
+      "forbidden_call_hits": [],
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "171e1c685d4be4348a2b1d23032be323543c0d0dd27554d5a61b91fab5ae0bf6"
+    }
+  },
+  "source_revision": "a4ac73869b14b442905f3a83d526007fc5f98b2a",
+  "started_utc": "2026-09-07T16:11:49.545031+00:00",
+  "status": "NONTERMINAL_CHECKPOINT",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
