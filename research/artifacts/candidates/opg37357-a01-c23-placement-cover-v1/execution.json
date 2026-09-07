@@ -1,0 +1,36 @@
+{
+  "command": "python fan_certificate.py",
+  "cpu_system_seconds": "0.05",
+  "cpu_user_seconds": "2.45",
+  "elapsed_seconds": "2.16",
+  "exit_code": 0,
+  "external_limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "file_bytes": 2097152,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "implementation": "CPython",
+  "kind": "candidate_generation_execution",
+  "limits": "Finite checks; the universal fan statement is proved separately. No C20 source recovery or all-planar uniform bound.",
+  "observation_sha256": "7ffee65b2478b5aa466774b9a6a4163794d1ae1b1fa59d88ebcdebe63e1f8111",
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "source_audit": {
+    "dynamic_execution": false,
+    "filesystem_read_or_write": false,
+    "imports": [
+      "fractions",
+      "itertools",
+      "json",
+      "sys"
+    ],
+    "network": false,
+    "subprocess": false
+  },
+  "source_sha256": "fa4d45cab2a77abf273e69707715718aeec22388553f2212e9f41170beb11e15",
+  "started_utc": "2026-09-07T08:57:47Z",
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
