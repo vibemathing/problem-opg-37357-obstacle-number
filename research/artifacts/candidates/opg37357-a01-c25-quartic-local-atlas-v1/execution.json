@@ -1,0 +1,146 @@
+{
+  "admission_gap": "No compatible registered mathematical consumer/closure receipt; fixture registry and PR gates are insufficient.",
+  "audit_repair": "A test comment had predicted acceptance of the altered triangle signature. The actual outcome was rejection; corrected the comment and reran unchanged mathematical controls.",
+  "base_revision": "ce90129ba27e425efd4228ff024b3686aa9a4588",
+  "c21_rerun": {
+    "command": "python -B replay.py C20_DATA_DIRECTORY",
+    "exit_code": 0,
+    "input_sha256": {
+      "c18_negative.certificate.json": "307717b13e0e756c2a5cd09d3575473d59c3aee6bf5e416756c1fde1ae0603e6",
+      "forced_line_witness.certificate.json": "bfb059d6f8c1f31128a1255992416e99ecd98068f26ece4ae06b953f8ac27e33",
+      "square_diagonals.certificate.json": "bc71008cc8b04e24f46ba90940ced13f808beabe7a9609d04c4f2f7d59b0a362",
+      "tiny_open_gap.certificate.json": "c4646e4ac9b91a2e36b1179ff8cf47f1a9f1a872d76f55921518d045fa373e1f"
+    },
+    "output_sha256": "b6a7b636bfe0c5afb0f4dccea8b9cba51a622ee41e1764f1157d571677447438",
+    "same_limits": true
+  },
+  "command": "PYTHONPATH=../opg37357-a01-c21-second-replay-v1 python -B controls.py",
+  "elapsed_seconds": 7.850477,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "bounded_candidate_execution_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "mathematical_workers": 1,
+    "output_bytes": 1000000,
+    "wall_seconds": 40
+  },
+  "observation_sha256": "bda8dca3633ec1c1563e1cc7adcc162e0058f50fe03fd47bd1fc675d235edc71",
+  "old_c20_sources": {
+    "audit_status": "Only frozen fingerprints available; original plaintext cannot be audited or attached. No rejected source retried. C21 separately named sources already delivered.",
+    "available": false,
+    "fingerprints": {
+      "arrangement.py": "70671996a490775fd3dbc3b00ca80c521ae938223558945f1997a42eff505f4b",
+      "checker.py": "5c062a48e885ee453245ede83412f5b77e38fa13fd26e9f4d74659f25c23d52c",
+      "geometry.py": "1675bfb842e9b9836eda5a821722b0cbe8f3edc912430400f0d33b785d812d64",
+      "run_bounded.py": "6166e2cc0754e7499e25bf068bcf99a5876a167104c2ea1f893127e2fab6877e",
+      "selftest.py": "b1295744896935eb89278f2967b52f5b21f351641fd29525e8b0fbc99d771a92"
+    },
+    "original_bytes_recovered": false,
+    "remote_tree_has_sources": false
+  },
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "source_review": "No new math module has network, filesystem I/O, child processes, dynamic evaluation or environment access; controls prints JSON. Existing C21 replay reads four pinned local files only.",
+  "sources": {
+    "c21/arrangement_model.py": {
+      "bytes": 5827,
+      "sha256": "5d8af64950e75150755d04f0916aa49dec7880d67474100aa3dc18ac24b0ec61"
+    },
+    "c21/certificate_recheck.py": {
+      "bytes": 4649,
+      "sha256": "70ce3848d3a57af52b6d1783e7a1936a09446df41e3e0c675ee1bf6b1cdd9197"
+    },
+    "c21/exact_primitives.py": {
+      "bytes": 2477,
+      "sha256": "7f84118d5d5042ff117995c3736d8d4cdd36e6b56beb0c7559358c102fa0beca"
+    },
+    "c21/replay.py": {
+      "bytes": 6085,
+      "sha256": "6fff5ba1b6fffa12692431b16f72dfae9b2a3118c6592d6c9dcc0fefe97bb841"
+    },
+    "c21/strict_cells.py": {
+      "bytes": 1824,
+      "sha256": "5065ec369f6adb0018769fd3b883e60ae777afc0db615e2f6bca2baaa002030f"
+    },
+    "c21/tree_recheck.py": {
+      "bytes": 4908,
+      "sha256": "44ee22b5f75729213f734606f1e09cad8d56c4188cab79013d515441128e8549"
+    },
+    "c25/controls.py": {
+      "bytes": 9041,
+      "sha256": "aadadcab0c5dff2ecbc6a3138662a849a9badb20a2dfd51dc173d9a2e36e11c4"
+    },
+    "c25/local_decode.py": {
+      "bytes": 7073,
+      "sha256": "a7bb66f0ef491687ccf73427ed38c82b1b9a788449e206357aacccebb557ac87"
+    },
+    "c25/quartic_signature.py": {
+      "bytes": 2013,
+      "sha256": "b86aa1d07df5951aab8a17d1e88024c61a8f5f35147d9872ed4b95503e03b922"
+    }
+  },
+  "started_utc": "2026-09-07T12:15:12.578773+00:00",
+  "static_imports": {
+    "c21/arrangement_model.py": [
+      "exact_primitives",
+      "fractions",
+      "itertools",
+      "strict_cells"
+    ],
+    "c21/certificate_recheck.py": [
+      "arrangement_model",
+      "exact_primitives",
+      "tree_recheck"
+    ],
+    "c21/exact_primitives.py": [
+      "fractions",
+      "math"
+    ],
+    "c21/replay.py": [
+      "arrangement_model",
+      "certificate_recheck",
+      "copy",
+      "exact_primitives",
+      "hashlib",
+      "json",
+      "pathlib",
+      "platform",
+      "strict_cells",
+      "sys",
+      "time"
+    ],
+    "c21/strict_cells.py": [
+      "exact_primitives",
+      "fractions",
+      "itertools"
+    ],
+    "c21/tree_recheck.py": [
+      "arrangement_model",
+      "exact_primitives",
+      "itertools"
+    ],
+    "c25/controls.py": [
+      "arrangement_model",
+      "copy",
+      "fractions",
+      "itertools",
+      "json",
+      "local_decode",
+      "quartic_signature",
+      "strict_cells"
+    ],
+    "c25/local_decode.py": [
+      "functools",
+      "itertools"
+    ],
+    "c25/quartic_signature.py": [
+      "fractions",
+      "itertools"
+    ]
+  },
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
