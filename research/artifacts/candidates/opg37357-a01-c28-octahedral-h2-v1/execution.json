@@ -1,0 +1,104 @@
+{
+  "admission_gap": "Registry has only fixture policies; no compatible mathematical consumer/closure receipt.",
+  "base_revision": "f09892bdb8e26edcdfc80edacc2790de904a70ea",
+  "command": "PYTHONPATH=../opg37357-a01-c27-fiber-guard-gluing-v1 python -B checks.py",
+  "earlier_sources_changed": false,
+  "elapsed_seconds": 3.826872,
+  "exit_code": 0,
+  "exports": [
+    {
+      "bytes": 28726,
+      "command": "python -B checks.py --cnf",
+      "elapsed_seconds": 0.683131,
+      "exit_code": 0,
+      "sha256": "8ff2ede8552a931ff6396381a76f5961eaa0135c5227ceb72d8fbecdcb98f4aa",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 27533,
+      "command": "python -B checks.py --sources",
+      "elapsed_seconds": 0.716708,
+      "exit_code": 0,
+      "sha256": "74b15181d4c3c1b1b2924060ac528ba5d0c771692d76cbda0c5265bb7ffc7814",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "full_stdout_is_reproducible_cache_not_additional_evidence": true,
+  "implementation": "CPython",
+  "imports": {
+    "checks.py": [
+      "collections",
+      "copy",
+      "coupling",
+      "exhaustive",
+      "fiber",
+      "fractions",
+      "geometry",
+      "hashlib",
+      "itertools",
+      "json",
+      "second_check",
+      "sys"
+    ],
+    "coupling.py": [
+      "itertools"
+    ],
+    "exhaustive.py": [
+      "itertools"
+    ],
+    "geometry.py": [
+      "fractions",
+      "itertools"
+    ],
+    "second_check.py": [
+      "itertools"
+    ]
+  },
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "math_workers": 1,
+    "output_bytes": 4194304,
+    "wall_seconds": 40
+  },
+  "observation_sha256": "3cb6eb886c4d8a210e4413357dcc34324a190ceaa5a92e8f5873d9c477f09df7",
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "reused_source": {
+    "git_blob": "1d00079aafa49149e08c13dcb5c837e886982e5d",
+    "path": "research/artifacts/candidates/opg37357-a01-c27-fiber-guard-gluing-v1/fiber.py",
+    "remote_bytes_matched": true,
+    "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35"
+  },
+  "routing": "CPU exact integer bitsets and Fraction; no numeric GPU screening or external solver. Local bounded candidate runtime, not a registered verifier adapter.",
+  "source_audit": "No network, process creation, dynamic execution, secret/environment reads or file I/O in published mathematical sources; checks prints bounded stdout.",
+  "source_sha256": {
+    "checks.py": {
+      "bytes": 9339,
+      "sha256": "407c291d276e2f1ec7e6ef022d92c42643bea04fd117d321b3a21aa7c22fd2b8"
+    },
+    "coupling.py": {
+      "bytes": 4645,
+      "sha256": "8f45d8e8605c6347c486bd11ec91d0f30eabf58354522189243e8861bdcb681b"
+    },
+    "exhaustive.py": {
+      "bytes": 3656,
+      "sha256": "31d2b29b6f75ef6b90d4e313071f8a40e8efb5952881aa3308ccc1257d492eb4"
+    },
+    "geometry.py": {
+      "bytes": 4697,
+      "sha256": "bbab0b90786c7e330982f12377525594877ae2cb0b7aa8f86c77c828709058b8"
+    },
+    "second_check.py": {
+      "bytes": 6756,
+      "sha256": "171e1c685d4be4348a2b1d23032be323543c0d0dd27554d5a61b91fab5ae0bf6"
+    }
+  },
+  "started_utc": "2026-09-07T15:33:11.797536+00:00",
+  "status": "NONTERMINAL_CHECKPOINT",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 167132,
+  "stdout_sha256": "c1253fab8831d4926d41b4bcdc62df6b8afcaf530436c340f162a04d8fb5cbd6",
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
