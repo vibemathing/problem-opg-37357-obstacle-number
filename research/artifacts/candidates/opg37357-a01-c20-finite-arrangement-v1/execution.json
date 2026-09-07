@@ -1,0 +1,42 @@
+{
+  "arithmetic": "fractions.Fraction; exact integers and rationals",
+  "command": "python selftest.py data",
+  "cpu_route": "exact standard-library rational geometry; no GPU numeric screening",
+  "elapsed_seconds": 0.971708,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "candidate_generation_execution",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "captured_output_bytes": 65536,
+    "cpu_seconds": 30,
+    "file_bytes": 1000000,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "outputs_sha256": {
+    "data/c18_negative.certificate.json": "307717b13e0e756c2a5cd09d3575473d59c3aee6bf5e416756c1fde1ae0603e6",
+    "data/fixtures.json": "c2409c352128834961adff1fbf2bc4b88880bdef7d96e974b96cd473d47af1fd",
+    "data/forced_line_witness.certificate.json": "bfb059d6f8c1f31128a1255992416e99ecd98068f26ece4ae06b953f8ac27e33",
+    "data/observations.json": "a0e22edd80cf77192c6cc655e2a63243b2e0d6af0a7e1bad517c8e4df3d58873",
+    "data/square_diagonals.certificate.json": "bc71008cc8b04e24f46ba90940ced13f808beabe7a9609d04c4f2f7d59b0a362",
+    "data/tiny_open_gap.certificate.json": "c4646e4ac9b91a2e36b1179ff8cf47f1a9f1a872d76f55921518d045fa373e1f"
+  },
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "source_delivery_checkpoint": "Issue #3 comment 5565680013",
+  "source_publication": "geometry.py tool write blocked; no commit; other source writes not attempted; repository replay pending",
+  "source_sha256": {
+    "arrangement.py": "70671996a490775fd3dbc3b00ca80c521ae938223558945f1997a42eff505f4b",
+    "checker.py": "5c062a48e885ee453245ede83412f5b77e38fa13fd26e9f4d74659f25c23d52c",
+    "geometry.py": "1675bfb842e9b9836eda5a821722b0cbe8f3edc912430400f0d33b785d812d64",
+    "run_bounded.py": "6166e2cc0754e7499e25bf068bcf99a5876a167104c2ea1f893127e2fab6877e",
+    "selftest.py": "b1295744896935eb89278f2967b52f5b21f351641fd29525e8b0fbc99d771a92"
+  },
+  "started_utc": "2026-09-07T05:47:11.474530+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "2b57a2b20f6513aca78e7fb9bdc26119480a1bdbc6300e76068c477c182e6a11",
+  "stdout_summary": "{\"fixtures\":23,\"invalid_rejected\":5,\"mutations_rejected\":16,\"observations_sha256\":\"a0e22edd80cf77192c6cc655e2a63243b2e0d6af0a7e1bad517c8e4df3d58873\",\"three_point_graphs\":160}\n",
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
