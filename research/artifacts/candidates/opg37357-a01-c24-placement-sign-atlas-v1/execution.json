@@ -1,0 +1,91 @@
+{
+  "implementation": "CPython",
+  "kind": "candidate_generation_execution",
+  "limits": "Exact finite controls and a conditional sign interpreter, not a proof or solver for realizability or the unrestricted root.",
+  "limits_per_run": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 35,
+    "output_file_bytes": 2097152,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "outputs_sha256": {
+    "coarse_observation.json": "4c1103023512efe9dd4b74c25cce22cd2e36edc59487a7acbed8ecfa5469aacf",
+    "observation.json": "c18efbc097b2f94cafc23da56c8902110762015a53facbf53886a6fafc0f90be"
+  },
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "realizability_solver_run": false,
+  "repair_log": [
+    {
+      "classification": "incomplete diagnostic path menu, not a theorem counterexample",
+      "failure": "axis-only escape search had no witness path for the positive 45 nonedge",
+      "final_exit_code": 0,
+      "first_exit_code": 1,
+      "repair": "Added the explicit rational diagonal from (1/600,2399/1080000) to (50,2399/36)."
+    }
+  ],
+  "runs": [
+    {
+      "command": "python controls.py",
+      "exit_code": 0,
+      "peak_rss_kib": 94764,
+      "reported_system_cpu_seconds": "0.07",
+      "reported_user_cpu_seconds": "1.45",
+      "reported_wall_seconds": "1.11"
+    },
+    {
+      "command": "python coarse_search.py",
+      "exit_code": 0,
+      "note": "Search was run before the final additional control-only tests; signature/sweep/search bytes unchanged.",
+      "peak_rss_kib": 93488,
+      "reported_system_cpu_seconds": "0.09",
+      "reported_user_cpu_seconds": "1.29",
+      "reported_wall_seconds": "0.98"
+    }
+  ],
+  "source_audit": {
+    "coarse_search.py": {
+      "forbidden_named_calls": [],
+      "imports": [
+        "itertools",
+        "json",
+        "signature",
+        "sweep"
+      ],
+      "sha256": "d7aed8dc56023ac212e728ef48edd7b4769d6429f059cf1ab3694435739e779a"
+    },
+    "controls.py": {
+      "forbidden_named_calls": [],
+      "imports": [
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "signature",
+        "sweep"
+      ],
+      "sha256": "cf9ef5f66eec01238c4fabbdd7ecb34c496a9981943ea67a8a981b7587116cf8"
+    },
+    "signature.py": {
+      "forbidden_named_calls": [],
+      "imports": [
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "cee640d54fa2ddba1a02f0bf6ae8edc0755c3dd204bdf0d8c30c989fa65c73ce"
+    },
+    "sweep.py": {
+      "forbidden_named_calls": [],
+      "imports": [
+        "functools",
+        "itertools",
+        "signature"
+      ],
+      "sha256": "ba812b61f17321a46d7067677e5794289fb2ce7eda84d3fde1494d0333da38f1"
+    }
+  },
+  "started_utc": "2026-09-07T09:29:03Z",
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
