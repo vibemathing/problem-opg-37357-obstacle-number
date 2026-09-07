@@ -1,0 +1,107 @@
+{
+  "base_revision": "61943c788f95f91874b99b77f06b4b8c898a6db7",
+  "frozen_source_revision": "a4ac73869b14b442905f3a83d526007fc5f98b2a",
+  "limitations": [
+    "No C27 fiber, PR33 extension, old checks.py or old RUP execution claimed by these runs.",
+    "Original nine PR34 mathematical files preserved; no separately trusted principal or closure.",
+    "Incidence enumeration is abstract, not a planar realization."
+  ],
+  "runs": [
+    {
+      "address_space_bytes": 536870912,
+      "command": "python -B resume_check.py",
+      "cpu_seconds": 35,
+      "elapsed_seconds": 3.521143,
+      "exit_code": 0,
+      "output_cap_bytes": 4194304,
+      "python": "3.13.5",
+      "started_utc": "2026-09-07T16:25:32.190726+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 5403,
+      "stdout_sha256": "e5dcc1aa5b39951a3d05b2d9c39a896144832128bb251af162dde6009a873c95",
+      "trusted_receipt": false,
+      "verdict": "candidate_only",
+      "wall_seconds": 40,
+      "workers": 1
+    },
+    {
+      "address_space_bytes": 536870912,
+      "command": "python -B anchored_triples.py",
+      "cpu_seconds": 35,
+      "elapsed_seconds": 1.829057,
+      "exit_code": 0,
+      "output_cap_bytes": 4194304,
+      "python": "3.13.5",
+      "started_utc": "2026-09-07T16:25:46.415865+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1064,
+      "stdout_sha256": "ff5c31043e9573cd1e41cdca98277510df5f244021f0c1d0012112f3a2faf1ed",
+      "trusted_receipt": false,
+      "verdict": "candidate_only",
+      "wall_seconds": 40,
+      "workers": 1
+    }
+  ],
+  "sources": {
+    "anchored_triples.py": {
+      "bytes": 5223,
+      "git_blob": "41ff69269d18cf927fd5b6f4236d1b0e038c37f9",
+      "imports": [
+        "itertools",
+        "json"
+      ],
+      "sha256": "253f4020674cf4bba5494cb375cf77f2deca80fd77f2ec88b0f643d33f1f8fba"
+    },
+    "coupling.py": {
+      "bytes": 4645,
+      "git_blob": "f4e43dd44a0062798298d0ed09400cdaaccada06",
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "8f45d8e8605c6347c486bd11ec91d0f30eabf58354522189243e8861bdcb681b"
+    },
+    "exhaustive.py": {
+      "bytes": 3656,
+      "git_blob": "f8828f96212f7b0a30a092645966e785544a35f9",
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "31d2b29b6f75ef6b90d4e313071f8a40e8efb5952881aa3308ccc1257d492eb4"
+    },
+    "geometry.py": {
+      "bytes": 4697,
+      "git_blob": "1d3bc75d23ec37de754c8fd610fe7a1bf470b75b",
+      "imports": [
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "bbab0b90786c7e330982f12377525594877ae2cb0b7aa8f86c77c828709058b8"
+    },
+    "resume_check.py": {
+      "bytes": 3948,
+      "git_blob": "bbc3982eb511d8b630d531677dd082a8e4cfc270",
+      "imports": [
+        "collections",
+        "copy",
+        "coupling",
+        "exhaustive",
+        "geometry",
+        "hashlib",
+        "itertools",
+        "json",
+        "second_check"
+      ],
+      "sha256": "ddbfdf85e7eb749291d17e460b6aac15fedbfe4ba929282c81dc37cd25b5f86b"
+    },
+    "second_check.py": {
+      "bytes": 6756,
+      "git_blob": "d01221054877c39b7350e6ad3c73b421312386ff",
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "171e1c685d4be4348a2b1d23032be323543c0d0dd27554d5a61b91fab5ae0bf6"
+    }
+  },
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
