@@ -1,0 +1,74 @@
+{
+  "command": "python replay.py ../opg37357-a01-c08-root-x4/replay-v2/certificate.json",
+  "derived_trace_storage": "Deterministically regenerated from the committed C08 proof and these sources; --emit-hints writes the full JSON trace. No unpublished source dependency.",
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "candidate_generation_execution",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 35,
+    "processes": 1,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "observation_sha256": "2ba8cee9bccb61923b75502edb7094bddd0163f3bdf9f9b021fd67cda815f0e8",
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "sources": {
+    "hint_check.py": {
+      "bytes": 2541,
+      "forbidden_dynamic_calls": [],
+      "imports": [],
+      "sha256": "a0a80addeb23c34f3249f90c39ec36a546b5c55c257d920a0ea6df63ee958e9d"
+    },
+    "replay.py": {
+      "bytes": 7015,
+      "forbidden_dynamic_calls": [],
+      "imports": [
+        "base64",
+        "bz2",
+        "copy",
+        "fractions",
+        "hashlib",
+        "hint_check",
+        "itertools",
+        "json",
+        "pathlib",
+        "platform",
+        "root_cnf",
+        "rup_hints",
+        "sys",
+        "time",
+        "trim_hints"
+      ],
+      "sha256": "588258571750940bb0dc13846cbd2388813bd097b1e5b6aed12737de5bd309da"
+    },
+    "root_cnf.py": {
+      "bytes": 3261,
+      "forbidden_dynamic_calls": [],
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "80f0fc0680db3c15444fca03a728d355c71ffeaaa782fb0fe74ff1c7408c5d8b"
+    },
+    "rup_hints.py": {
+      "bytes": 3340,
+      "forbidden_dynamic_calls": [],
+      "imports": [
+        "collections",
+        "hint_check"
+      ],
+      "sha256": "d70773166e6a6e3073a26bc9eab6ca17957a6ab1e2ed30c38a71e7d5cf4eadaa"
+    },
+    "trim_hints.py": {
+      "bytes": 1358,
+      "forbidden_dynamic_calls": [],
+      "imports": [
+        "hint_check"
+      ],
+      "sha256": "5ba554e9834d49dba0bd7205d85553fe34ddec424d4eb91021acf5f3d1f87cae"
+    }
+  },
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
