@@ -1,0 +1,76 @@
+{
+  "verdict": "candidate_only",
+  "scope": "complete case split for the bridge, not a finite substitute for universal proof",
+  "cases": [
+    {
+      "case": "coincident_graph_points",
+      "handling": "X4 positive degree and absence of true twins rule them out for the visibility semantics; direct GP projector rejects them.",
+      "executed_check": "X4 degrees, adjacent true twins, coincident input rejection"
+    },
+    {
+      "case": "collinear_graph_vertices",
+      "handling": "Use robust hypothetical representation first; only then select a GP replacement. Do not translate zero determinants into Boolean bits.",
+      "executed_check": "collinear GP-projector rejection"
+    },
+    {
+      "case": "edge_overlap_or_vertex_inside_edge",
+      "handling": "Permitted initially; if a representation exists, its compact positive-clearance replacement admits GP perturbation. Fully forbidden nonedges cannot have a hit.",
+      "executed_check": null
+    },
+    {
+      "case": "empty_interior_or_non_path_connected_original_obstacle",
+      "handling": "Connected O lies in one OPEN free component; finite polygonal paths are constructed there, not inside O.",
+      "executed_check": null
+    },
+    {
+      "case": "boundary_tangency",
+      "handling": "Openness is that of free space, not original obstacle. Move the hit within a free segment interval and put it inside the replacement.",
+      "executed_check": null
+    },
+    {
+      "case": "unbounded_or_nonclosed_original_obstacle",
+      "handling": "Only finitely many hits are retained; compact finite path union supplies positive clearance.",
+      "executed_check": null
+    },
+    {
+      "case": "crossed_key_path",
+      "handling": "Subdivide at the exact crossing (2/17,27/17), erase a loop, then splice upper/lower simple arcs.",
+      "executed_check": "eight-point GP fixture and all nonadjacent Jordan-boundary side pairs"
+    },
+    {
+      "case": "shared_nonedge_endpoint",
+      "handling": "One shared endpoint is allowed; omit repeated c,d orientation literals; the OPEN cd segment stays outside.",
+      "executed_check": "five-point GP common-endpoint conflict fixture"
+    },
+    {
+      "case": "several_graph_edges_concurrent",
+      "handling": "Subdivide at one shared geometric point; finitely many segments give finitely many subdivision vertices. No pairwise-distinct-crossings assumption.",
+      "executed_check": null
+    },
+    {
+      "case": "parallel_distinct_pair_lines",
+      "handling": "Root CNF needs vertex GP only. C25 Dstar projection is a sufficient extra normal form, not a necessary premise of every root control.",
+      "executed_check": "parabola ten-point controls have parallel disjoint pair lines but no collinear vertex triple"
+    },
+    {
+      "case": "forced_line_concurrence_at_graph_vertex",
+      "handling": "C25 Delta=0 signs are retained; the W projection for incident line pairs remains nonzero in GP.",
+      "executed_check": "120 exact W-to-orientation identities"
+    },
+    {
+      "case": "empty_target_or_single_target",
+      "handling": "Empty target set uses a remote object; one target needs one hit. X4 has 21 targets. No pair side bit for identical targets.",
+      "executed_check": "one-target fan control"
+    },
+    {
+      "case": "no_key_paths_or_mixed_internal_sides",
+      "handling": "Use a common default side when unforced; mixed-side paths impose no side restriction; two opposite forcing paths are a conflict.",
+      "executed_check": "1736 key-variable truth patterns and four positive polygon CNFs"
+    },
+    {
+      "case": "unrealizable_abstract_signature",
+      "handling": "All signature-to-geometric statements require real realizability; SAT necessary clauses cannot manufacture a placement.",
+      "executed_check": null
+    }
+  ]
+}
