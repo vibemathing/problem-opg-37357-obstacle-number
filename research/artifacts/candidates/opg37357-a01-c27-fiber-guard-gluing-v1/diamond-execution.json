@@ -1,0 +1,100 @@
+{
+  "base_revision": "e358fe83f026715b0b6ddf868f84a58c3bdf91fe",
+  "flat_output_policy": "Flat CNF and provenance TSV were actually emitted locally and hashed. Their new CLI source is not published after the platform block; these are not claimed replayable from the repository alone. The result file is a derived compact observation, not the original stdout.",
+  "kind": "actual_bounded_generator_execution_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "output_bytes": 4194304,
+    "processes": 1,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "old_C27_replayed_in_full": false,
+  "platform_family": "Linux",
+  "published_result_sha256": "3f9e30278e12b1a9342d35eb394ede74b5d3d4e74a2c97056d7ed778a675725a",
+  "python": "3.13.5",
+  "resumed_remote_head": "27be45a2de34eb886ebe3825c170b78dd97b8677",
+  "reused_fiber_bytes_match_pin": true,
+  "runs": [
+    {
+      "command": "python -B diamond_checks.py",
+      "elapsed_seconds": 8.65917,
+      "exit_code": 0,
+      "started_utc": "2026-09-07T15:28:43.529987+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 14199,
+      "stdout_name": "diamond-observation.json",
+      "stdout_sha256": "10eedf0cc0d1bbdfb318371194e2bce84d7efcc4325f5cad53a067f3a70754e3"
+    },
+    {
+      "command": "python -B diamond_checks.py --cnf",
+      "elapsed_seconds": 0.989022,
+      "exit_code": 0,
+      "started_utc": "2026-09-07T15:28:52.189878+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 559184,
+      "stdout_name": "diamond-generated.cnf",
+      "stdout_sha256": "b1123e8b099542a9fbe16d47e36b45f45b8c3c365cabfd58750015aca055bdfc"
+    },
+    {
+      "command": "python -B diamond_checks.py --sources",
+      "elapsed_seconds": 0.968605,
+      "exit_code": 0,
+      "started_utc": "2026-09-07T15:28:53.180323+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 675263,
+      "stdout_name": "diamond-generated-origins.tsv",
+      "stdout_sha256": "24ed849f34e70df5561b69f65864428207f188b35579e3ecef3fc95d2519a643"
+    }
+  ],
+  "source_publication": {
+    "diamond_checks.py": "not attempted after first block",
+    "diamond_core.py": "platform safety block; no commit",
+    "exact_sat.py": "not attempted after first block",
+    "fiber.py": "already on the C27 branch; bytes matched; not reuploaded"
+  },
+  "source_safety": "New modules use memory-only arithmetic/finite enumeration and JSON/TSV/stdout; no network, file access, subprocess or dynamic execution. Bounds applied by an unpublished external wrapper.",
+  "sources": {
+    "diamond_checks.py": {
+      "bytes": 15328,
+      "sha256": "b13a90328193128e374df23db00af55bca7bf1ea9fc1034930e104de71efbd19",
+      "static_imports": [
+        "copy",
+        "diamond_core",
+        "exact_sat",
+        "fiber",
+        "fractions",
+        "functools",
+        "hashlib",
+        "itertools",
+        "json",
+        "sys"
+      ]
+    },
+    "diamond_core.py": {
+      "bytes": 6025,
+      "sha256": "28d23fc41ff96183ad43d795504bca0560708cb5348c4c6dc99d11a9bfd5acea",
+      "static_imports": [
+        "fractions",
+        "itertools"
+      ]
+    },
+    "exact_sat.py": {
+      "bytes": 3966,
+      "sha256": "72487c01303e73eab96ecab1aafd6f23c7a2630655389aa1e84cf5ad70f17c19",
+      "static_imports": []
+    },
+    "fiber.py": {
+      "bytes": 8821,
+      "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35",
+      "static_imports": [
+        "bisect",
+        "fractions",
+        "itertools"
+      ]
+    }
+  },
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
