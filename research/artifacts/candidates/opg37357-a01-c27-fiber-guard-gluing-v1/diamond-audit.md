@@ -214,8 +214,8 @@ Its filled region is the union of a horizontal hub-hit rectangle, a left
 vertical corridor, a top bridge and the region b(x)<=y<=H+1. These pieces meet
 along full intervals or rectangles, not isolated points. The listed boundary
 is simple: the bottom chain is strictly x-monotone in x>=1; the left corridor
-has x<=-1; the top bridge is above H; and the hub-hit rectangle is below every
-graph point. Their only boundary transitions are the displayed consecutive
+has x<=-1; the top bridge is above H; and the hub-hit rectangle lies strictly
+between the two hubs and below all leaf points. Their only boundary transitions are the displayed consecutive
 ones. This supplies a Jordan polygon without invoking C19's tube construction.
 It has N+c+7 corners, hence 3r+7 for D_r (16 for D3).
 
