@@ -13,6 +13,13 @@
       "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
       "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
       "tree_sha256": "e58872845dcb2c748bac31c1204c8de422e5ef516c7859e680e3a3e0788373c7"
+    },
+    {
+      "harness_snapshot_sha256": "4181effe1481eb1454130d2d6c87a7c327ef84e39b28d051fc496870d08864d1",
+      "harness_version": "1.2.4",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
+      "tree_sha256": "01d26131ffde26aeb60491f333505e5bd10248809682773981b7be0664277afc"
     }
   ],
   "repository": "vibemathing/problem-opg-37357-obstacle-number",
