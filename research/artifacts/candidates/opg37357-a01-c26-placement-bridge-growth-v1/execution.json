@@ -1,0 +1,65 @@
+{
+  "base_revision": "c299659f0c7f505a1e9739e6d8329fbde48c30ff",
+  "c22_compiler": {
+    "full_blob_matched": true,
+    "git_blob": "29bc3588ca2454db1454c6af7c7cdb06b9a3cbe4",
+    "read_at_base": true,
+    "sha256": "80f0fc0680db3c15444fca03a728d355c71ffeaaa782fb0fe74ff1c7408c5d8b"
+  },
+  "command": "PYTHONPATH=../opg37357-a01-c22-root-hints-v1 python -B controls.py",
+  "correction": "The first crossing fixture failed GP at triple (0,5,7). Auxiliary c,d changed from (-5,-3),(6,-2) to (-5,-4),(8,-4); all final sources rerun. No mathematical universal claim was withdrawn.",
+  "elapsed_seconds": 4.391189,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "bounded_candidate_execution_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 35,
+    "mathematical_processes": 1,
+    "output_bytes": 4194304,
+    "wall_seconds": 40
+  },
+  "observation_sha256": "9944852f3e0564bc89f86d0b7569185df3bdb83c0d70a9257b4ebb3a11a5a6fd",
+  "old_rup_replayed_this_round": false,
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "safety": "Published modules are readable text; no network, process creation, dynamic execution or file I/O. Local resource wrapper is not part of the mathematical source.",
+  "source_sha256": {
+    "clause_bridge.py": {
+      "bytes": 6223,
+      "sha256": "a1395be250d45f5476e2d9734736127486a1d66b608b96179f58692f23da855b"
+    },
+    "controls.py": {
+      "bytes": 9133,
+      "sha256": "150709c9bdb0ebfeeb57f9857aaecd75837607cb54f61ad77d4b5eb1e33ca741"
+    },
+    "growth.py": {
+      "bytes": 4364,
+      "sha256": "3fc815d746b9e5b2a1bc697a42ab0d8f4164b7a8ea1fb98d1a9bb91a9ea1be39"
+    }
+  },
+  "started_utc": "2026-09-07T13:37:03.174156+00:00",
+  "static_imports": {
+    "clause_bridge.py": [
+      "itertools"
+    ],
+    "controls.py": [
+      "clause_bridge",
+      "collections",
+      "fractions",
+      "growth",
+      "hashlib",
+      "itertools",
+      "json",
+      "root_cnf",
+      "sys"
+    ],
+    "growth.py": [
+      "clause_bridge",
+      "itertools"
+    ]
+  },
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
