@@ -1,0 +1,96 @@
+{
+  "admission_gap": "No compatible registered mathematical consumer or closure receipt. This execution is in the generator trust domain.",
+  "audit_repairs": [
+    "An exploratory three-point reference wrongly treated covered-by-one-edge as covered-by-union. Replaced it by a complete union-interval reference. The collinear three-point/two-edge case is retained.",
+    "The public intersection helper returned floating values on raw integer inputs. Explicit rational conversion repaired it; integer-intersection regression now checks result types. Internal model coordinates were already exact Fractions.",
+    "A preliminary crossed-path coordinate choice was not in vertex general position. The frozen replacement is checked by all 35 triple determinants."
+  ],
+  "base_revision": "e358fe83f026715b0b6ddf868f84a58c3bdf91fe",
+  "implementation": "CPython",
+  "kind": "bounded_candidate_execution_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_seconds": 30,
+    "mathematical_workers": 1,
+    "output_file_bytes": 4194304,
+    "wall_seconds": 40
+  },
+  "new_source_review": "Four ordinary UTF-8 files; pure memory math plus JSON/TSV stdout. No network, file access, process creation, dynamic execution or environment/credential access. External bounded runner is not part of the mathematical source.",
+  "old_C20_sources": "Only old fingerprints available; no recovery, audit or reupload of unavailable byte strings.",
+  "platform_family": "Linux",
+  "proof_trace_status": "C22 contradiction remains a separately frozen dependency; its RUP was not rerun.",
+  "python": "3.13.5",
+  "reused_source": {
+    "path": "research/artifacts/candidates/opg37357-a01-c26-placement-bridge-growth-v1/clause_bridge.py",
+    "role": "frozen provenance producer; not incidence core",
+    "sha256": "a1395be250d45f5476e2d9734736127486a1d66b608b96179f58692f23da855b"
+  },
+  "runs": [
+    {
+      "command": "PYTHONPATH=../opg37357-a01-c26-placement-bridge-growth-v1 python -B checks.py",
+      "elapsed_seconds": 8.746726,
+      "exit_code": 0,
+      "output_bytes": 8505,
+      "started_utc": "2026-09-07T14:44:39.562031+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4567369b72fa61de868bbdfd07601afe4bda6af1cc8819e5489e6e219c9d8457"
+    },
+    {
+      "command": "PYTHONPATH=../opg37357-a01-c26-placement-bridge-growth-v1 python -B checks.py --sources",
+      "elapsed_seconds": 4.884859,
+      "exit_code": 0,
+      "output_bytes": 1807486,
+      "started_utc": "2026-09-07T14:44:48.308918+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "79f40490af759056950eea71182747e402d31c593e3f2e16357042bdb019d4b6"
+    }
+  ],
+  "source_to_semantics": "Proof draft and finite checks, not a kernel theorem or trusted verifier",
+  "sources": {
+    "checks.py": {
+      "bytes": 14046,
+      "sha256": "b14244cdea2c79ad8ce3ce9f0fa2ce1f9dcdd8526209e5db59f6e5ba63fe1aad"
+    },
+    "fiber.py": {
+      "bytes": 8821,
+      "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35"
+    },
+    "guards.py": {
+      "bytes": 5524,
+      "sha256": "48c256498e5472d66e8d97abd0cbf5dd735d2166ec7dc94827abc087e9dfeb6f"
+    },
+    "stars.py": {
+      "bytes": 2208,
+      "sha256": "a2de4fdf6c18881cff188fd3ab13d1bec67d8103048c2d8c730eb162d087311a"
+    }
+  },
+  "static_imports": {
+    "checks.py": [
+      "clause_bridge",
+      "copy",
+      "fiber",
+      "fractions",
+      "guards",
+      "hashlib",
+      "itertools",
+      "json",
+      "stars",
+      "sys"
+    ],
+    "fiber.py": [
+      "bisect",
+      "fractions",
+      "itertools"
+    ],
+    "guards.py": [
+      "fiber",
+      "itertools"
+    ],
+    "stars.py": [
+      "fiber",
+      "fractions",
+      "itertools"
+    ]
+  },
+  "verdict": "candidate_only"
+}
