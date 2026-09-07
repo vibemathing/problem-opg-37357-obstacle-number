@@ -1,0 +1,99 @@
+{
+  "command": "python replay.py C20_DATA_DIRECTORY",
+  "elapsed_seconds": 0.065242,
+  "enforcement": "external shell ulimit -t 30; ulimit -v 524288; timeout 40s",
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "second_implementation_candidate_replay",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "certificate_bytes": 1000000,
+    "cpu_seconds": 30,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "mathematical_limits": [
+    "Same candidate-generation trust domain, not a registered verifier.",
+    "Cell enumeration is capped at 10 lines; positive tree consumer currently requires at least 2 nonedges.",
+    "No general tube polygon or all-placement lower bound is checked by these four certificates."
+  ],
+  "old_c20_source_bytes_available": false,
+  "output_file_mtime_utc": "2026-09-07T06:57:11.572640+00:00",
+  "platform": "Linux",
+  "python": "3.13.5",
+  "scope": "four hash-pinned C20 certificates; 24 damaged-certificate tests; 12 model controls; four strict-elimination smoke cases",
+  "source_core_shared_with_c20": false,
+  "sources": {
+    "arrangement_model.py": {
+      "bytes": 5827,
+      "git_blob": "97971ffeb428ab058d3479b24c67f2f5bdf230dc",
+      "imports": [
+        "exact_primitives",
+        "fractions",
+        "itertools",
+        "strict_cells"
+      ],
+      "sha256": "5d8af64950e75150755d04f0916aa49dec7880d67474100aa3dc18ac24b0ec61"
+    },
+    "certificate_recheck.py": {
+      "bytes": 4649,
+      "git_blob": "863c04c8c35d88ba21aaf4d21afffd6c916219aa",
+      "imports": [
+        "arrangement_model",
+        "exact_primitives",
+        "tree_recheck"
+      ],
+      "sha256": "70ce3848d3a57af52b6d1783e7a1936a09446df41e3e0c675ee1bf6b1cdd9197"
+    },
+    "exact_primitives.py": {
+      "bytes": 2477,
+      "git_blob": "05d3310c0f4de390561c3404b903b8b015b3ce06",
+      "imports": [
+        "fractions",
+        "math"
+      ],
+      "sha256": "7f84118d5d5042ff117995c3736d8d4cdd36e6b56beb0c7559358c102fa0beca"
+    },
+    "replay.py": {
+      "bytes": 6085,
+      "git_blob": "d9f50b05e8760a18f4ed5540120a7361a4140ecc",
+      "imports": [
+        "arrangement_model",
+        "certificate_recheck",
+        "copy",
+        "exact_primitives",
+        "hashlib",
+        "json",
+        "pathlib",
+        "platform",
+        "strict_cells",
+        "sys",
+        "time"
+      ],
+      "sha256": "6fff5ba1b6fffa12692431b16f72dfae9b2a3118c6592d6c9dcc0fefe97bb841"
+    },
+    "strict_cells.py": {
+      "bytes": 1824,
+      "git_blob": "98c9c40a7195ddf68425f5a828e6554f598438c5",
+      "imports": [
+        "exact_primitives",
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "5065ec369f6adb0018769fd3b883e60ae777afc0db615e2f6bca2baaa002030f"
+    },
+    "tree_recheck.py": {
+      "bytes": 4908,
+      "git_blob": "4148b5aba1a9a5611041078848a954565f1f31b8",
+      "imports": [
+        "arrangement_model",
+        "exact_primitives",
+        "itertools"
+      ],
+      "sha256": "44ee22b5f75729213f734606f1e09cad8d56c4188cab79013d515441128e8549"
+    }
+  },
+  "stdout_sha256": "95b07fa58b46382c3d5fe1c6dd4713d6072d347d458f71bb30d56dd32939f178",
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
