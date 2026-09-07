@@ -44,7 +44,7 @@ remain separate. No trusted closure, EvidenceLink, Result or Solution.
 The branch is synchronized by a history-preserving merge, no force. The diff
 must contain only the nine preserved candidates, one newly namespaced packet,
 the preserved request and initial checkpoint, this checkpoint, and the new
-resume execution JSON. Inspect all three checks at the FINAL head, compare
+candidate/resume-execution.json. Inspect all three checks at the FINAL head, compare
 against current main, review the full allowed diff, then protected squash merge.
 Record final head/check IDs/merge/main in Issue #3 after a fresh read. No second
 packet is added to this PR. This file does not anticipate a merge result.
@@ -54,3 +54,8 @@ best_verified_result: none
 best_h2_candidate: complete octahedral SAT with a genuinely realized minimum
 open_obligations: obligation:opg37357-root; obligation:opg37357-bounded-polygon-encoding
 next_action: placement-universal higher-rank incidence forcing, not repeating this SAT family
+
+Schema repair: run 34142833228 rejected the draft because every inbox JSON is
+a packet, candidate artifact locators must be under candidates, and candidate
+IDs are lowercase. Moved the unchanged execution bytes into the octahedral
+candidate directory and lowercased the README candidate ID. No gate changed.
