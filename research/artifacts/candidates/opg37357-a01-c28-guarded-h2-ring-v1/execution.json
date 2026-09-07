@@ -1,0 +1,94 @@
+{
+  "verdict": "candidate_only",
+  "status": "NONTERMINAL_CHECKPOINT",
+  "kind": "bounded_candidate_execution_not_trusted_receipt",
+  "base_revision": "f09892bdb8e26edcdfc80edacc2790de904a70ea",
+  "command": "PYTHONPATH=../opg37357-a01-c27-fiber-guard-gluing-v1 python -B controls.py --bundle",
+  "started_utc": "2026-09-07T15:37:21.362471+00:00",
+  "python": "3.13.5",
+  "implementation": "CPython",
+  "platform_family": "Linux",
+  "exit_code": 0,
+  "elapsed_seconds": 2.135539,
+  "limits": {
+    "cpu_seconds": 30,
+    "cpu_hard_seconds": 31,
+    "wall_seconds": 40,
+    "address_space_bytes": 536870912,
+    "file_output_bytes": 4194304,
+    "mathematical_processes": 1,
+    "math_threads": 1
+  },
+  "routing": "CPU exact integer bitsets and Fraction; no floating or GPU screening",
+  "sources": {
+    "controls.py": {
+      "bytes": 10939,
+      "sha256": "261b4a0a02e3f3bd5253098d023f24c98d636b23432a8a6461c05d88fe3a14d7"
+    },
+    "guarded_cnf.py": {
+      "bytes": 6964,
+      "sha256": "32b4b1102765d3166a6de7c7eb23c98e92abce5473dc414e69f14ccbb91fb743"
+    },
+    "second_check.py": {
+      "bytes": 7391,
+      "sha256": "edcfac08a2122d6b8fe382df9e61e80d3cfc36be71ae1e6d3a9bf7bb9c7b021d"
+    }
+  },
+  "existing_dependency": {
+    "path": "research/artifacts/candidates/opg37357-a01-c27-fiber-guard-gluing-v1/fiber.py",
+    "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35",
+    "git_blob": "1d00079aafa49149e08c13dcb5c837e886982e5d",
+    "new_source_copy_published": false
+  },
+  "source_publication_block": {
+    "path": "research/artifacts/candidates/opg37357-a01-c28-guarded-h2-ring-v1/slab_geometry.py",
+    "sha256": "f87e3b7099fffe3cce0e683bf867aec2db896dc39c5a26380836bed7743180ce",
+    "commit_returned": false,
+    "retry_or_alternate_upload": false,
+    "final_run_uses_this_file": false,
+    "issue_checkpoint": 5572877352
+  },
+  "imports": {
+    "second_check.py": [
+      "itertools"
+    ],
+    "controls.py": [
+      "copy",
+      "fiber",
+      "fractions",
+      "guarded_cnf",
+      "hashlib",
+      "itertools",
+      "json",
+      "second_check",
+      "sys"
+    ],
+    "guarded_cnf.py": [
+      "itertools",
+      "json"
+    ]
+  },
+  "output_bundle_sha256": "a5fa146e4fa19e05ff40d2db3edaf9c9763745b2fcf2e764f690b34008a00b23",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "published_data_sha256": {
+    "graph.json": "329e09efbc68bcc510407574a9f04732d93d00ecd622af56414213df1a27e0a4",
+    "model.json": "f0175893f2a15e499563d4c0a647ee1d6121e5faea65d9f386b1188794a5d66a",
+    "rank3-control.json": "7e6302aa5e43a1f2e703da38a142489d01d7a147dbc7b5d40fa426b1c179b978",
+    "observation.json": "9b7e3f90a13e160062a7d324f1a1b57b91d9753ee0a80aa88eef0276f72ba3a7"
+  },
+  "derived_outputs_not_separately_published": {
+    "cnf.json": {
+      "bytes": 95624,
+      "sha256": "94bf19a6788c5b923dfba2dd0d1387bc12fd91d69f0725f6d988f87508109efc",
+      "reproduction": "key cnf.json in controls.py --bundle"
+    },
+    "fiber-certificate.json": {
+      "bytes": 16832,
+      "sha256": "85386d0fa08562babff9bdbe1c1e2eb621e2d25dc3676512dd0c69e0d708acfd",
+      "reproduction": "key fiber-certificate.json in controls.py --bundle"
+    }
+  },
+  "safety": "All published modules reviewed as ordinary text; no network/process/dynamic code/credential or file access. Control entry writes stdout only. External resource wrapper is not a mathematical module.",
+  "trusted_verifier_run": null,
+  "admission_gap": "No compatible registered checker plus semantic/axiom/closure gate. Different code is not a different verifier trust domain."
+}
