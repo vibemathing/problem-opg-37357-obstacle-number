@@ -1,0 +1,99 @@
+{
+  "verdict": "candidate_only",
+  "base_revision": "1a5eefd266401b903f15de10c07b3aff7d3f9773",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.13.5",
+    "platform": "Linux",
+    "exact_arithmetic": "fractions.Fraction and integers"
+  },
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 40,
+    "memory_bytes": 536870912,
+    "output_bytes": 4194304,
+    "mathematical_workers": 1
+  },
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "replay.py"
+      ],
+      "started_utc": "2026-09-08T10:15:33.834979+00:00",
+      "wall_seconds": 4.7393815420000465,
+      "exit_code": 0,
+      "stdout": "report.json",
+      "stdout_bytes": 26072,
+      "stdout_sha256": "2ba3813e38168e63587237284f505263a7e02cdee961c575ca497007e674f750",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "replay.py",
+        "--cnf"
+      ],
+      "started_utc": "2026-09-08T10:15:38.576162+00:00",
+      "wall_seconds": 1.394805862999874,
+      "exit_code": 0,
+      "stdout": "formula.cnf",
+      "stdout_bytes": 195614,
+      "stdout_sha256": "65a82e42c686eb833f648156269630050991d70bccb9128ac965fc98cd29d098",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "replay.py",
+        "--origins"
+      ],
+      "started_utc": "2026-09-08T10:15:39.973052+00:00",
+      "wall_seconds": 1.5966646680001304,
+      "exit_code": 0,
+      "stdout": "origins.json",
+      "stdout_bytes": 179520,
+      "stdout_sha256": "72357996d7d6953c1aa23fec744ab103c93cdcdf2fbffc8c4d2ac60c77f20c07",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sources": {
+    "bipyramid.py": {
+      "sha256": "d16a12f13111fbd000aaa073313f7d027a81e5fb693ab0133299ba63e257f3ac",
+      "bytes": 4183
+    },
+    "replay.py": {
+      "sha256": "6c0e2abb80300a2fe385233740f5fa33b33e458a51262813a0fd440010f71985",
+      "bytes": 7037
+    }
+  },
+  "dependencies": {
+    "fiber.py": {
+      "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35",
+      "git_blob": "1d00079aafa49149e08c13dcb5c837e886982e5d",
+      "reused_not_republished": true
+    },
+    "witness_check.py": {
+      "sha256": "86be77d1805deb3a134a46ca55641db5b18dbeedcf2a7f31a5ba959b34a828a7",
+      "git_blob": "428c4cb6c7c7d02f78f2d7f8b0902ab0484c882e",
+      "reused_not_republished": true
+    },
+    "guarded_cnf.py": {
+      "sha256": "a1fb730149eb93ad7e21f63a05ebda7389817f1135de86de9bf2fbcf4ad8ede9",
+      "git_blob": "5c81ad5d2a886cf9e8645db3134e015f08d08a36",
+      "reused_not_republished": true
+    }
+  },
+  "scope": "One seven-vertex cyclic bipyramid seed; uniform analytical two-convex-obstacle theorem for all cycle lengths N>=4. Six size checks validate the construction, not an old connector enumeration.",
+  "development_notes": [
+    "Fresh main acquired the concurrent C31 tetra-wall candidate after our local tetrahedral-port check. That identical graph/CNF/triple result is not retransported; published C31 sources are reused by blob.",
+    "Three convex cyclic orders of the NEW pentagonal bipyramid were screened: two fixed-direction formulas infeasible and the third geometrically coverable by two components. These are drawing-slice observations, never a graph lower bound. The final uniform coordinates and explicit convex polygons supersede those exploratory witnesses.",
+    "All 64 labels and all 20^2 component pairs are evaluated at the final placement; no 2^35 direction census is asserted.",
+    "The complete minimal-empty-family audit finds only five pairs, so there is no new irredundant rank>=3 clause to extract from this final model. No fake higher-order cut is added.",
+    "Initial network retrieval failed DNS. The existing dependencies were instead materialized from actual connector-read UTF-8 contents and matched their full Git blob hashes.",
+    "No protected file, earlier candidate or old failed family is changed. Computation, mutation refusal and transport are not trusted mathematical admission."
+  ]
+}
