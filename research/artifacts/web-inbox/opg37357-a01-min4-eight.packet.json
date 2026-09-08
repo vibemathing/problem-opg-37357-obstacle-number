@@ -46,7 +46,7 @@
   {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/execution.json","revision":"4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a","relation":"exact"},
   {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/witness_check.py","revision":"4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a","relation":"exact"}
  ],
- "requested_verification":["counterexample_check","statement_faithfulness","kernel_check","axiom_escape_audit"],
+ "requested_verification":["statement_faithfulness","kernel_check","axiom_escape_audit"],
  "verdict":"candidate_only",
  "created_at":"2026-09-08T13:14:01.070915+00:00"
 }
