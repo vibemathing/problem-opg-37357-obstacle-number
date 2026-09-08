@@ -1,0 +1,52 @@
+{
+ "schema_version":"1.1.0",
+ "channel":"chatgpt-web-github-issue-pr-writer",
+ "repository":"vibemathing/problem-opg-37357-obstacle-number",
+ "repository_identity":{"binding_state":"verified","database_id":1358762707,"node_id":"R_kgDOUP0S0w","default_branch":"main"},
+ "problem_id":"problem:opg-37357-obstacle-number",
+ "problem_contract_sha256":"10fb03f159d4818c5141567a77390e1351fda77c9810ac45d66dd7d4e14aa4f5",
+ "harness_snapshot_sha256":"4181effe1481eb1454130d2d6c87a7c327ef84e39b28d051fc496870d08864d1",
+ "base_revision":"1a5eefd266401b903f15de10c07b3aff7d3f9773",
+ "importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+ "attempt_id":"attempt:web-20260906-opg37357-a01",
+ "route_id":"route:one-obstacle-semialgebraic-encoding-v1",
+ "graph_id":"graph:opg37357-initial-v1",
+ "obligation_id":"obligation:opg37357-root",
+ "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+ "transport":{"branch":"web/attempt-opg37357-a01-min4-eight-v1","issue_number":3,"issue_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3","pull_request_number":null,"pull_request_url":null},
+ "objective":"Complete the existing MIN4 candidate: select the structural minimum non-bipyramid four-connected maximal planar graph, give a full two-polygon rational counterplacement, audit its guarded CNF and five-target capacity failure, and preserve the unrestricted placement and trusted-admission gaps.",
+ "candidate_artifacts":[
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-witness-v1","kind":"counterexample","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/witness.json","sha256":"c0d21807e630be1e0af0da8c8dbc5ec19124ad6d469aa56fc9807b6713931ca1"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-structure-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/structure.json","sha256":"94df9f2bf7b85706cae6bc9afb94a591d045c3c999255d397d4a20a46a824151"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-direct-check-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/check_candidate.py","sha256":"b162bb02da1f10c1791da2bdadcfa951a65abb1d6b2f471ffd527ea351c54625"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-clause-audit-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/clause_audit.py","sha256":"4eec6c0740e223902961e6ef19b4b4b2ae3c5572cd57fca0098e22d2ccff9b11"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-graph-producer-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/enumerate_small.py","sha256":"7f5d5b256b6ef9aa2844b0d4bf58955128f085cf8144803569a2924f7524db31"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-cnf-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/guarded_cnf.py","sha256":"86814275e9ec2a3d723bc43d1cb043634a9daa9cd4e732cfa50566c2b8d81412"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-matching-v1","kind":"proof","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/matching.py","sha256":"09674da06f2d60cfcf51db1c40c9890b4882be70098a7179dac6567cbdcb3c64"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-mutations-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/mutations.py","sha256":"6428f16e464b5b965fe8a3136e0e146f006a717037070763cc1c6552b605203d"},
+  {"candidate_id":"candidate:opg37357-a01-min4-eight-structural-consumer-v1","kind":"computation","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/structure_audit.py","sha256":"39aa286e7a74cc0c3fa762b7c2137c221ef2b02e3549a9f1550a278ea2a9da1f"}
+ ],
+ "atomic_claims":[
+  {"claim_id":"claim:opg37357-min4-eight-upper-witness","text":"The frozen eight-vertex graph has a representation by two disjoint filled simple polygons with 28 and 8 corners; all eighteen graph edges avoid them and all ten nonedges have strict interior hits. Exact obstacle number one versus two is not decided.","status":"candidate"},
+  {"claim_id":"claim:opg37357-min4-eight-structural-minimum","text":"Complete complement-degree enumeration through orders five to eight, checked isomorphism orbits and separator/Kuratowski/rotation certificates leave one non-bipyramid four-connected maximal planar graph at order eight and none below it.","status":"candidate"},
+  {"claim_id":"claim:opg37357-min4-eight-cnf-sat","text":"The full necessary guarded CNF has 156 variables, 31676 clauses and all 1502 simple paths; the exhibited real direction table admits exactly two of 1024 labelings. This is a SAT witness, not exhaustive realizable-order-type classification.","status":"candidate"},
+  {"claim_id":"claim:opg37357-min4-eight-matching-barrier","text":"For any finite graph and any matching of q nonedges, some rational GP placement admits one free square hitting all q selected pairs. Other nonedges need not be blocked. Hence a fixed target set containing a three-edge nonedge matching cannot obey capacity two at every unrestricted placement.","status":"candidate"},
+  {"claim_id":"claim:opg37357-min4-eight-target-failure","text":"The five targets fixed before screening are 02,14,27,36,57. The complete two-polygon witness has targets 14,27,36 in the same interior obstacle, contradicting the proposed capacity-two property for this graph and target set.","status":"candidate"}
+ ],
+ "assumptions":["Finite simple graph, injective vertex points, closed graph-edge segments, graph points outside closed filled simple polygon obstacles; graph-edge crossings are allowed.","At most two obstacles permits unused labels and repeated free-component choices.","The minimality statement is within the specified small-order structural filters, not all possible graph families or all known representation templates.","Existing README.md, witness_check.py, observation.json and execution.json are frozen at source revision 4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a and retained unchanged in the PR."],
+ "risks":["No compatible registered trusted geometric/structural consumer or root closure invocation is present; code diversity and CI do not supply such a receipt.","An earlier incidence.py write was blocked with no commit. Its dependent reconstruction pipeline is unpublished and is not a dependency of the delivered direct checker; no alternate publication is attempted.","The recorded 36-component and fixed-selector computation is a generation-domain observation, not a newly delivered general incidence verifier.","The packet lists selected frozen certificate/consumer artifacts. Other supporting files remain bound by their immutable source revision and the complete PR diff; no blanket local rehash claim is made.","The matching square is a partial-obstacle construction for selected targets, not a one-obstacle representation of arbitrary graphs.","The bounded eight-vertex counterplacement does not close either unrestricted ProblemContract question."],
+ "open_obligations":["obligation:opg37357-root","obligation:opg37357-bounded-polygon-encoding"],
+ "failed_route_proposal":{"route_fingerprint":"10ad5ccc3293d6bb483ea6fa28de89c4a9f57c5490b2d3e614f1f0bc18fae2dd","failure_class":"counterexample","blocker":"This structural minimum has a full two-polygon representation. Its frozen five-target capacity-two assertion fails; more generally a size-three nonedge matching prevents an unconditional fixed-target capacity-two proof. This excludes neither larger planar graphs nor adaptive target choices.","evidence_locators":["research/artifacts/candidates/opg37357-a01-min4-eight-v1/witness.json","research/artifacts/candidates/opg37357-a01-min4-eight-v1/README.md","research/artifacts/candidates/opg37357-a01-min4-eight-v1/matching.py"],"next_obligation":"obligation:opg37357-root"},
+ "source_refs":[
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"problem-library/records/canonical-problems.jsonl","revision":"1a5eefd266401b903f15de10c07b3aff7d3f9773","relation":"exact"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/records/failed-routes.jsonl","revision":"1a5eefd266401b903f15de10c07b3aff7d3f9773","relation":"exact"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-c27-fiber-guard-gluing-v1/README.md","revision":"1a5eefd266401b903f15de10c07b3aff7d3f9773","relation":"prior_art"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-c29-prism-rank3-v1/README.md","revision":"1a5eefd266401b903f15de10c07b3aff7d3f9773","relation":"prior_art"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/README.md","revision":"4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a","relation":"exact"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/execution.json","revision":"4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a","relation":"exact"},
+  {"repository":"vibemathing/problem-opg-37357-obstacle-number","path":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/witness_check.py","revision":"4d0f3fd426bc3a9945807b7ea0bc51eaa93af28a","relation":"exact"}
+ ],
+ "requested_verification":["counterexample_check","statement_faithfulness","kernel_check","axiom_escape_audit"],
+ "verdict":"candidate_only",
+ "created_at":"2026-09-08T13:14:01.070915+00:00"
+}
