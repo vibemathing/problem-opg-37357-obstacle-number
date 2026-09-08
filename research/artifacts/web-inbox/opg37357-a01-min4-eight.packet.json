@@ -13,7 +13,7 @@
  "graph_id":"graph:opg37357-initial-v1",
  "obligation_id":"obligation:opg37357-root",
  "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
- "transport":{"branch":"web/attempt-opg37357-a01-min4-eight-v1","issue_number":3,"issue_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3","pull_request_number":null,"pull_request_url":null},
+ "transport":{"branch":"web/attempt-opg37357-a01-min4-eight-v1","issue_number":3,"issue_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/issues/3","pull_request_number":38,"pull_request_url":"https://github.com/vibemathing/problem-opg-37357-obstacle-number/pull/38"},
  "objective":"Complete the existing MIN4 candidate: select the structural minimum non-bipyramid four-connected maximal planar graph, give a full two-polygon rational counterplacement, audit its guarded CNF and five-target capacity failure, and preserve the unrestricted placement and trusted-admission gaps.",
  "candidate_artifacts":[
   {"candidate_id":"candidate:opg37357-a01-min4-eight-witness-v1","kind":"counterexample","locator":"research/artifacts/candidates/opg37357-a01-min4-eight-v1/witness.json","sha256":"c0d21807e630be1e0af0da8c8dbc5ec19124ad6d469aa56fc9807b6713931ca1"},
