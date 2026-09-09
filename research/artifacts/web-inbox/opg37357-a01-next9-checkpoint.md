@@ -8,7 +8,10 @@ Repository: vibemathing/problem-opg-37357-obstacle-number
 Issue: #3
 Branch: web/attempt-opg37357-a01-next9-canonical-v1
 Base: 3e135c3af759b6471f21ae053474b5b1196921bf
-PR: not yet created at this checkpoint
+PR: #40
+Source/witness commit: f3f063716a615e62f6bbffaadecc93f006ceef11
+Complete candidate/packet creation: e5c72825525cacc39dc65721f2faa5fe9ff5064e
+PR final-head checks and merge: pending when this file was written
 Initial Issue progress receipt:5594634837
 
 ## New result and exact scope
