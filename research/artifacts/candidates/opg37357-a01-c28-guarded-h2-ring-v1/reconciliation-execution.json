@@ -1,0 +1,212 @@
+{
+  "command": "PYTHONPATH=.:../opg37357-a01-c27-fiber-guard-gluing-v1 python -B run.py",
+  "elapsed_seconds": 10.048397,
+  "error": null,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "kind": "bounded_replay_of_concurrent_files_not_trusted_receipt",
+  "limits": {
+    "address_space_bytes": 536870912,
+    "cpu_hard_seconds": 36,
+    "cpu_seconds": 35,
+    "file_output_bytes": 4194304,
+    "processes": 1,
+    "threads": 1,
+    "wall_seconds": 40
+  },
+  "original_run_preserved": true,
+  "original_run_record": "execution.json",
+  "pinned_head": "1ae96270bce27bae60e34ff482a7b81a54cbc791",
+  "platform_family": "Linux",
+  "python": "3.13.5",
+  "raw_stdout_status": "deterministic output of run.py; digest-bound; not a trusted receipt",
+  "sources": {
+    "C27/fiber.py": {
+      "bytes": 8821,
+      "sha256": "7209f677207695d220f7766286fdd94867f75d88a42d35b36cdfdef8d709ba35"
+    },
+    "audit.py": {
+      "bytes": 5868,
+      "git_blob": "8fe0d64ede952f8ae4a7033b9547dbe5dfd3c98f",
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "47b2137d9f3665ec62d8db8ae5e448e8a6974af7437bce787fb6df932760f8bc"
+    },
+    "exhaust.py": {
+      "bytes": 2973,
+      "git_blob": "7f0ff855b63afd02d14e82bc01a991aeee474625",
+      "imports": [
+        "guarded"
+      ],
+      "sha256": "b0ace63e9b1a60701efe2dcf2fd14c40538c75506d5dafdeb1af31625b4866b3"
+    },
+    "geometry_check.py": {
+      "bytes": 5448,
+      "git_blob": "c71e21f5cbe3d6cd94b11ea7ae12bd2b98e63a76",
+      "imports": [
+        "fractions",
+        "itertools"
+      ],
+      "sha256": "9735ff563a25c1be74a0aed869f74160d2183901b732f9ae8efc280fe5fccde8"
+    },
+    "guarded.py": {
+      "bytes": 5430,
+      "git_blob": "cfcc82b77b40843e7777590b5bae29fc5020e57d",
+      "imports": [
+        "itertools"
+      ],
+      "sha256": "a2893393fcdf9213f0bc37074372a684eec2682ef6f0f58b82f9a1311f101f49"
+    },
+    "guarded_cnf.py": {
+      "bytes": 6964,
+      "sha256": "32b4b1102765d3166a6de7c7eb23c98e92abce5473dc414e69f14ccbb91fb743"
+    },
+    "run.py": {
+      "bytes": 11373,
+      "git_blob": "6f66e1643964637b30874893a4768deacaff7d2f",
+      "imports": [
+        "audit",
+        "collections",
+        "copy",
+        "exhaust",
+        "fiber",
+        "geometry_check",
+        "guarded",
+        "guarded_cnf",
+        "hashlib",
+        "itertools",
+        "json",
+        "second_check",
+        "sys"
+      ],
+      "sha256": "6373560b5d963dbc27961bae2d72fa090b48e7ea45617fd843bd5c70d50ff440"
+    },
+    "second_check.py": {
+      "bytes": 7391,
+      "sha256": "edcfac08a2122d6b8fe382df9e61e80d3cfc36be71ae1e6d3a9bf7bb9c7b021d"
+    }
+  },
+  "started_utc": "2026-09-07T16:06:57.073885+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 23830,
+  "stdout_sha256": "8d085ef01516e6f20a278a98892a1d859105b3f9817bfb2dc196c6ddf80926f8",
+  "summary": {
+    "abstract_triple_control_has_planar_realization": false,
+    "all_deletions_sat": true,
+    "base_cases": [
+      {
+        "clauses": 1430,
+        "minimum": [
+          0,
+          7
+        ],
+        "name": "diamonds",
+        "polygon_boundary_vertices": [
+          4,
+          7
+        ],
+        "polygon_check_accepted": true,
+        "sat_pairs": 21248,
+        "variables": 36
+      },
+      {
+        "clauses": 1134,
+        "minimum": [
+          0,
+          0
+        ],
+        "name": "octahedron",
+        "polygon_boundary_vertices": [
+          26
+        ],
+        "polygon_check_accepted": true,
+        "sat_pairs": 15952,
+        "variables": 29
+      }
+    ],
+    "port_chain_tests": [
+      {
+        "corners": [
+          4,
+          4
+        ],
+        "edges": 8,
+        "helpers": 3,
+        "minimum_edge_boundary_distance_squared": "15625/425984",
+        "n": 5,
+        "nonedges": 2,
+        "verified_by_direct_polygon_check": true
+      },
+      {
+        "corners": [
+          4,
+          7
+        ],
+        "edges": 11,
+        "helpers": 4,
+        "minimum_edge_boundary_distance_squared": "1521/80000",
+        "n": 6,
+        "nonedges": 4,
+        "verified_by_direct_polygon_check": true
+      },
+      {
+        "corners": [
+          4,
+          8
+        ],
+        "edges": 14,
+        "helpers": 5,
+        "minimum_edge_boundary_distance_squared": "34969/3022848",
+        "n": 7,
+        "nonedges": 7,
+        "verified_by_direct_polygon_check": true
+      },
+      {
+        "corners": [
+          4,
+          11
+        ],
+        "edges": 23,
+        "helpers": 8,
+        "minimum_edge_boundary_distance_squared": "1225/292896",
+        "n": 10,
+        "nonedges": 22,
+        "verified_by_direct_polygon_check": true
+      },
+      {
+        "corners": [
+          4,
+          19
+        ],
+        "edges": 47,
+        "helpers": 16,
+        "minimum_edge_boundary_distance_squared": "1089/1112072",
+        "n": 18,
+        "nonedges": 106,
+        "verified_by_direct_polygon_check": true
+      }
+    ],
+    "rejected_mutations": [
+      "drop_edge",
+      "reverse_edge",
+      "drop_clause",
+      "drop_guard",
+      "flip_direction",
+      "repeat_path_vertex",
+      "wrong_path_end",
+      "reverse_clause",
+      "drop_exact_one",
+      "wrong_color_map",
+      "wrong_side_map",
+      "wrong_color_origin",
+      "missing_five_edge_row",
+      "duplicate_clause",
+      "duplicate_neighbor",
+      "single_rotation_reverse"
+    ],
+    "single_edge_deletions": 23
+  },
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
